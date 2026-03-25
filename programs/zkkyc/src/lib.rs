@@ -1,318 +1,178 @@
 use anchor_lang::prelude::*;
+use arcium_anchor::prelude::*;
 
-declare_id!("ZkKYC111111111111111111111111111111111111111");
+// zkKYC: identity compliance checked inside Arcium MXE — no PII on-chain
+const COMP_DEF_OFFSET_VERIFY_KYC: u32 = comp_def_offset("verify_kyc");
 
-/// zkKYC — Privacy-preserving identity compliance via Arcium MXE
-///
-/// KYC checks run inside Arcium's encrypted execution environment.
-/// The program stores only a compliance status commitment — never raw PII.
-/// Umbra Privacy integration: verified users can access shielded DeFi
-/// without re-exposing their identity on each protocol interaction.
-#[program]
+declare_id!("Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h");
+
+#[arcium_program]
 pub mod zkkyc {
     use super::*;
 
-    /// Register a KYC provider (issuer of compliance attestations)
-    pub fn register_provider(
-        ctx: Context<RegisterProvider>,
-        provider_id: u64,
-        name: String,
-        mxe_cluster_offset: u64,
-    ) -> Result<()> {
-        let provider = &mut ctx.accounts.provider;
-        provider.authority = ctx.accounts.authority.key();
-        provider.provider_id = provider_id;
-        provider.name = name;
-        provider.mxe_cluster_offset = mxe_cluster_offset;
-        provider.active = true;
-        provider.attestation_count = 0;
-
-        emit!(ProviderRegistered {
-            provider_id,
-            mxe_cluster_offset,
-        });
+    pub fn init_verify_kyc_comp_def(ctx: Context<InitVerifyKycCompDef>) -> Result<()> {
+        init_comp_def(ctx.accounts, None, None)?;
         Ok(())
     }
 
-    /// Submit encrypted identity data for KYC verification.
-    /// `encrypted_identity` — PII encrypted with MXE public key.
-    /// The MXE checks compliance rules without decrypting to any single party.
-    pub fn submit_kyc_request(
-        ctx: Context<SubmitKyc>,
-        provider_id: u64,
-        encrypted_identity: Vec<u8>,
-        identity_commitment: [u8; 32],
+    /// Submit encrypted identity attributes for KYC verification.
+    /// age and jurisdiction_flag encrypted with MXE public key.
+    /// MXE checks compliance without any PII touching the chain.
+    pub fn verify_kyc(
+        ctx: Context<VerifyKyc>,
+        computation_offset: u64,
+        encrypted_age: [u8; 32],
+        encrypted_jurisdiction: [u8; 32],
+        pubkey: [u8; 32],
+        nonce: u128,
     ) -> Result<()> {
-        let request = &mut ctx.accounts.kyc_request;
-        request.subject = ctx.accounts.subject.key();
-        request.provider_id = provider_id;
-        request.encrypted_identity = encrypted_identity;
-        request.identity_commitment = identity_commitment;
-        request.status = KycStatus::Pending;
-        request.submitted_at = Clock::get()?.unix_timestamp;
+        ctx.accounts.sign_pda_account.bump = ctx.bumps.sign_pda_account;
+        let args = ArgBuilder::new()
+            .x25519_pubkey(pubkey)
+            .plaintext_u128(nonce)
+            .encrypted_u8(encrypted_age)
+            .encrypted_u8(encrypted_jurisdiction)
+            .build();
 
-        emit!(KycRequested {
-            subject: ctx.accounts.subject.key(),
-            provider_id,
-            identity_commitment,
-        });
+        queue_computation(
+            ctx.accounts,
+            computation_offset,
+            args,
+            vec![VerifyKycCallback::callback_ix(
+                computation_offset,
+                &ctx.accounts.mxe_account,
+                &[],
+            )?],
+            1,
+            0,
+        )?;
         Ok(())
     }
 
-    /// Record MXE compliance result.
-    /// Called by the KYC provider after Arcium MXE runs the compliance check.
-    /// Only stores a boolean result + proof hash — zero PII on-chain.
-    pub fn record_compliance_result(
-        ctx: Context<RecordResult>,
-        subject: Pubkey,
-        compliance_status: bool,
-        expiry: i64,
-        mxe_proof_hash: [u8; 32],
-        jurisdiction_flags: u16,
+    #[arcium_callback(encrypted_ix = "verify_kyc")]
+    pub fn verify_kyc_callback(
+        ctx: Context<VerifyKycCallback>,
+        output: SignedComputationOutputs<VerifyKycOutput>,
     ) -> Result<()> {
-        let credential = &mut ctx.accounts.compliance_credential;
-        credential.subject = subject;
-        credential.issuer = ctx.accounts.provider_authority.key();
-        credential.compliant = compliance_status;
-        credential.issued_at = Clock::get()?.unix_timestamp;
-        credential.expires_at = expiry;
-        credential.mxe_proof_hash = mxe_proof_hash;
-        credential.jurisdiction_flags = jurisdiction_flags;
-
-        let request = &mut ctx.accounts.kyc_request;
-        request.status = if compliance_status {
-            KycStatus::Approved
-        } else {
-            KycStatus::Rejected
+        let o = match output.verify_output(
+            &ctx.accounts.cluster_account,
+            &ctx.accounts.computation_account,
+        ) {
+            Ok(VerifyKycOutput { field_0 }) => field_0,
+            Err(_) => return Err(ErrorCode::AbortedComputation.into()),
         };
 
-        emit!(ComplianceResult {
-            subject,
-            compliant: compliance_status,
-            expires_at: expiry,
-            mxe_proof_hash,
-        });
-        Ok(())
-    }
-
-    /// Check compliance status (for DeFi protocol integration).
-    /// Returns true if the subject has valid, non-expired compliance credential.
-    /// Protocols call this instead of re-running KYC each time.
-    pub fn verify_compliance(
-        ctx: Context<VerifyCompliance>,
-        _subject: Pubkey,
-    ) -> Result<bool> {
-        let credential = &ctx.accounts.compliance_credential;
-        let clock = Clock::get()?;
-
-        let valid = credential.compliant
-            && credential.expires_at > clock.unix_timestamp;
-
-        emit!(ComplianceChecked {
-            subject: credential.subject,
-            valid,
-            checked_at: clock.unix_timestamp,
-        });
-
-        Ok(valid)
-    }
-
-    /// Revoke a compliance credential (e.g. sanctions match detected)
-    pub fn revoke_credential(
-        ctx: Context<RevokeCredential>,
-        _subject: Pubkey,
-        reason_code: u8,
-    ) -> Result<()> {
-        let credential = &mut ctx.accounts.compliance_credential;
-        credential.compliant = false;
-        credential.revoked = true;
-        credential.revoke_reason = reason_code;
-
-        emit!(CredentialRevoked {
-            subject: credential.subject,
-            reason_code,
+        emit!(KycVerifiedEvent {
+            result: o.ciphertexts[0],
+            nonce: o.nonce.to_le_bytes(),
         });
         Ok(())
     }
 }
 
-// --- Accounts ---
-
+#[queue_computation_accounts("verify_kyc", payer)]
 #[derive(Accounts)]
-#[instruction(provider_id: u64)]
-pub struct RegisterProvider<'info> {
-    #[account(
-        init,
-        payer = authority,
-        space = KycProvider::LEN,
-        seeds = [b"provider", &provider_id.to_le_bytes()],
-        bump
-    )]
-    pub provider: Account<'info, KycProvider>,
+#[instruction(computation_offset: u64)]
+pub struct VerifyKyc<'info> {
     #[account(mut)]
-    pub authority: Signer<'info>,
-    pub system_program: Program<'info, System>,
-}
-
-#[derive(Accounts)]
-#[instruction(provider_id: u64)]
-pub struct SubmitKyc<'info> {
-    #[account(
-        init,
-        payer = subject,
-        space = KycRequest::LEN,
-        seeds = [b"kyc-req", subject.key().as_ref(), &provider_id.to_le_bytes()],
-        bump
-    )]
-    pub kyc_request: Account<'info, KycRequest>,
-    #[account(mut)]
-    pub subject: Signer<'info>,
-    pub system_program: Program<'info, System>,
-}
-
-#[derive(Accounts)]
-#[instruction(subject: Pubkey)]
-pub struct RecordResult<'info> {
+    pub payer: Signer<'info>,
     #[account(
         init_if_needed,
-        payer = provider_authority,
-        space = ComplianceCredential::LEN,
-        seeds = [b"credential", subject.as_ref()],
-        bump
+        space = 9,
+        payer = payer,
+        seeds = [&SIGN_PDA_SEED],
+        bump,
+        address = derive_sign_pda!(),
     )]
-    pub compliance_credential: Account<'info, ComplianceCredential>,
+    pub sign_pda_account: Account<'info, ArciumSignerAccount>,
+    #[account(address = derive_mxe_pda!())]
+    pub mxe_account: Account<'info, MXEAccount>,
     #[account(
         mut,
-        seeds = [b"kyc-req", subject.as_ref(), &kyc_request.provider_id.to_le_bytes()],
-        bump
+        address = derive_mempool_pda!(mxe_account, ErrorCode::ClusterNotSet)
     )]
-    pub kyc_request: Account<'info, KycRequest>,
+    /// CHECK: mempool_account, checked by the arcium program.
+    pub mempool_account: UncheckedAccount<'info>,
+    #[account(
+        mut,
+        address = derive_execpool_pda!(mxe_account, ErrorCode::ClusterNotSet)
+    )]
+    /// CHECK: executing_pool, checked by the arcium program.
+    pub executing_pool: UncheckedAccount<'info>,
+    #[account(
+        mut,
+        address = derive_comp_pda!(computation_offset, mxe_account, ErrorCode::ClusterNotSet)
+    )]
+    /// CHECK: computation_account, checked by arcium program.
+    pub computation_account: UncheckedAccount<'info>,
+    #[account(address = derive_comp_def_pda!(COMP_DEF_OFFSET_VERIFY_KYC))]
+    pub comp_def_account: Account<'info, ComputationDefinitionAccount>,
+    #[account(
+        mut,
+        address = derive_cluster_pda!(mxe_account, ErrorCode::ClusterNotSet)
+    )]
+    pub cluster_account: Account<'info, Cluster>,
+    #[account(
+        mut,
+        address = ARCIUM_FEE_POOL_ACCOUNT_ADDRESS,
+    )]
+    pub pool_account: Account<'info, FeePool>,
+    #[account(
+        mut,
+        address = ARCIUM_CLOCK_ACCOUNT_ADDRESS
+    )]
+    pub clock_account: Account<'info, ClockAccount>,
+    pub system_program: Program<'info, System>,
+    pub arcium_program: Program<'info, Arcium>,
+}
+
+#[callback_accounts("verify_kyc")]
+#[derive(Accounts)]
+pub struct VerifyKycCallback<'info> {
+    pub arcium_program: Program<'info, Arcium>,
+    #[account(address = derive_comp_def_pda!(COMP_DEF_OFFSET_VERIFY_KYC))]
+    pub comp_def_account: Account<'info, ComputationDefinitionAccount>,
+    #[account(address = derive_mxe_pda!())]
+    pub mxe_account: Account<'info, MXEAccount>,
+    /// CHECK: computation_account, checked by arcium program.
+    pub computation_account: UncheckedAccount<'info>,
+    #[account(address = derive_cluster_pda!(mxe_account, ErrorCode::ClusterNotSet))]
+    pub cluster_account: Account<'info, Cluster>,
+    #[account(address = ::anchor_lang::solana_program::sysvar::instructions::ID)]
+    /// CHECK: instructions_sysvar
+    pub instructions_sysvar: AccountInfo<'info>,
+}
+
+#[init_computation_definition_accounts("verify_kyc", payer)]
+#[derive(Accounts)]
+pub struct InitVerifyKycCompDef<'info> {
     #[account(mut)]
-    pub provider_authority: Signer<'info>,
+    pub payer: Signer<'info>,
+    #[account(mut, address = derive_mxe_pda!())]
+    pub mxe_account: Box<Account<'info, MXEAccount>>,
+    #[account(mut)]
+    /// CHECK: comp_def_account, checked by arcium program.
+    pub comp_def_account: UncheckedAccount<'info>,
+    #[account(mut, address = derive_mxe_lut_pda!(mxe_account.lut_offset_slot))]
+    /// CHECK: address_lookup_table, checked by arcium program.
+    pub address_lookup_table: UncheckedAccount<'info>,
+    #[account(address = LUT_PROGRAM_ID)]
+    /// CHECK: lut_program
+    pub lut_program: UncheckedAccount<'info>,
+    pub arcium_program: Program<'info, Arcium>,
     pub system_program: Program<'info, System>,
 }
 
-#[derive(Accounts)]
-#[instruction(subject: Pubkey)]
-pub struct VerifyCompliance<'info> {
-    #[account(
-        seeds = [b"credential", subject.as_ref()],
-        bump
-    )]
-    pub compliance_credential: Account<'info, ComplianceCredential>,
-}
-
-#[derive(Accounts)]
-#[instruction(subject: Pubkey)]
-pub struct RevokeCredential<'info> {
-    #[account(
-        mut,
-        seeds = [b"credential", subject.as_ref()],
-        bump,
-        has_one = issuer @ ZkKycError::Unauthorized
-    )]
-    pub compliance_credential: Account<'info, ComplianceCredential>,
-    pub issuer: Signer<'info>,
-}
-
-// --- State ---
-
-#[account]
-pub struct KycProvider {
-    pub authority: Pubkey,
-    pub provider_id: u64,
-    pub name: String,         // max 64 bytes
-    pub mxe_cluster_offset: u64,
-    pub active: bool,
-    pub attestation_count: u64,
-}
-
-impl KycProvider {
-    pub const LEN: usize = 8 + 32 + 8 + (4 + 64) + 8 + 1 + 8;
-}
-
-#[account]
-pub struct KycRequest {
-    pub subject: Pubkey,
-    pub provider_id: u64,
-    pub encrypted_identity: Vec<u8>, // max 512 bytes, MXE-encrypted PII
-    pub identity_commitment: [u8; 32],
-    pub status: KycStatus,
-    pub submitted_at: i64,
-}
-
-impl KycRequest {
-    pub const LEN: usize = 8 + 32 + 8 + (4 + 512) + 32 + 1 + 8;
-}
-
-#[account]
-pub struct ComplianceCredential {
-    pub subject: Pubkey,
-    pub issuer: Pubkey,
-    pub compliant: bool,
-    pub issued_at: i64,
-    pub expires_at: i64,
-    pub mxe_proof_hash: [u8; 32],
-    pub jurisdiction_flags: u16, // bitmask: US=0x01, EU=0x02, UK=0x04, etc.
-    pub revoked: bool,
-    pub revoke_reason: u8,
-}
-
-impl ComplianceCredential {
-    pub const LEN: usize = 8 + 32 + 32 + 1 + 8 + 8 + 32 + 2 + 1 + 1;
-}
-
-#[derive(AnchorSerialize, AnchorDeserialize, Clone, PartialEq, Eq)]
-pub enum KycStatus {
-    Pending,
-    Approved,
-    Rejected,
-}
-
-// --- Events ---
-
 #[event]
-pub struct ProviderRegistered {
-    pub provider_id: u64,
-    pub mxe_cluster_offset: u64,
+pub struct KycVerifiedEvent {
+    pub result: [u8; 32],
+    pub nonce: [u8; 16],
 }
-
-#[event]
-pub struct KycRequested {
-    pub subject: Pubkey,
-    pub provider_id: u64,
-    pub identity_commitment: [u8; 32],
-}
-
-#[event]
-pub struct ComplianceResult {
-    pub subject: Pubkey,
-    pub compliant: bool,
-    pub expires_at: i64,
-    pub mxe_proof_hash: [u8; 32],
-}
-
-#[event]
-pub struct ComplianceChecked {
-    pub subject: Pubkey,
-    pub valid: bool,
-    pub checked_at: i64,
-}
-
-#[event]
-pub struct CredentialRevoked {
-    pub subject: Pubkey,
-    pub reason_code: u8,
-}
-
-// --- Errors ---
 
 #[error_code]
-pub enum ZkKycError {
-    #[msg("Unauthorized: caller is not the credential issuer")]
-    Unauthorized,
-    #[msg("Credential has expired")]
-    CredentialExpired,
-    #[msg("Identity data exceeds 512 bytes")]
-    IdentityDataTooLarge,
+pub enum ErrorCode {
+    #[msg("Computation aborted")]
+    AbortedComputation,
+    #[msg("Cluster not set")]
+    ClusterNotSet,
 }
