@@ -6,6 +6,9 @@
 [![Arcium MXE](https://img.shields.io/badge/Arcium-MXE%20cluster%20456-00D4FF)](https://arcium.com)
 [![Anchor](https://img.shields.io/badge/Anchor-0.32.1-orange)](https://anchor-lang.com)
 
+**Program ID (devnet):** `Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h`
+[View on Explorer](https://explorer.solana.com/address/Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h?cluster=devnet)
+
 ---
 
 ## Problem
