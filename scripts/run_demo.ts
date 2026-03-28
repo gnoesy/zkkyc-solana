@@ -26,7 +26,7 @@ import * as os from "os";
 
 // Reference: actual encrypted-identity-mxe program on devnet
 // This demo simulates the zkKYC flow using the deployed program
-const REFERENCE_PROGRAM_ID = "3zYA4ykzGofqeH6m6aET46AQNgBVtEa2XotAVX6TXgBV";
+const REFERENCE_PROGRAM_ID = "Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h";
 const RPC_URL = "https://api.devnet.solana.com";
 
 function log(event: string, data: Record<string, unknown> = {}) {
