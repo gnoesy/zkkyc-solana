@@ -1,100 +1,224 @@
 /**
  * zkkyc-solana demo
- * Simulates a zkKYC compliance check via Arcium MXE
- *
- * Flow:
- *   1. Encrypt identity attributes (age proof + residency flag) client-side
- *   2. Submit encrypted data to the zkkyc Solana program
- *   3. Program queues computation on Arcium MXE cluster 456
- *   4. MXE verifies compliance rules on encrypted inputs
- *   5. Callback writes boolean result + proof hash on-chain — NO PII stored
+ * Privacy-preserving KYC compliance check via Arcium MXE.
  *
  * Usage:
- *   ANCHOR_WALLET=~/.config/solana/devnet.json \
- *   npx ts-node --transpile-only scripts/run_demo.ts
- *
- * Prerequisites:
- *   - Solana CLI + devnet wallet with SOL
- *   - yarn install
- *   - Arcium MXE cluster 456 accessible on devnet
+ *   ANCHOR_WALLET=~/.config/solana/wallet2.json npx ts-node --transpile-only scripts/run_demo.ts
  */
-import { Connection, Keypair, PublicKey } from "@solana/web3.js";
 import * as anchor from "@coral-xyz/anchor";
+import { Keypair, PublicKey } from "@solana/web3.js";
 import { randomBytes } from "crypto";
 import * as fs from "fs";
 import * as os from "os";
+import * as path from "path";
+import {
+  awaitComputationFinalization,
+  getArciumEnv,
+  getCompDefAccOffset,
+  RescueCipher,
+  deserializeLE,
+  getMXEPublicKey,
+  getMXEAccAddress,
+  getMempoolAccAddress,
+  getCompDefAccAddress,
+  getExecutingPoolAccAddress,
+  getComputationAccAddress,
+  getClusterAccAddress,
+  x25519,
+} from "@arcium-hq/client";
 
-// Reference: actual encrypted-identity-mxe program on devnet
-// This demo simulates the zkKYC flow using the deployed program
-const REFERENCE_PROGRAM_ID = "Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h";
-const RPC_URL = "https://api.devnet.solana.com";
+const PROGRAM_ID = new PublicKey("Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h");
+const SIGN_PDA_SEED = Buffer.from("ArciumSignerAccount");
+const EVIDENCE_LOG = path.join(__dirname, "../evidence/mxe_runs.jsonl");
 
 function log(event: string, data: Record<string, unknown> = {}) {
-  console.log(JSON.stringify({ event, ...data, ts: new Date().toISOString() }));
+  const line = JSON.stringify({ event, ...data, ts: new Date().toISOString() });
+  fs.mkdirSync(path.dirname(EVIDENCE_LOG), { recursive: true });
+  fs.appendFileSync(EVIDENCE_LOG, line + "\n");
+  console.log(line);
+}
+
+async function withRpcRetry<T>(fn: () => Promise<T>, retries = 8): Promise<T> {
+  let delayMs = 500;
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return await fn();
+    } catch (error: any) {
+      const message = error?.message || String(error);
+      if (attempt >= retries || !message.includes("429")) {
+        throw error;
+      }
+      await new Promise((resolve) => setTimeout(resolve, delayMs));
+      delayMs *= 2;
+    }
+  }
+}
+
+async function sendAndConfirmCompat(
+  provider: anchor.AnchorProvider,
+  tx: anchor.web3.Transaction,
+  signers: anchor.web3.Signer[] = [],
+  opts: anchor.web3.ConfirmOptions = {},
+): Promise<string> {
+  const commitment = opts.commitment || opts.preflightCommitment || "confirmed";
+  const latest = await withRpcRetry(() =>
+    provider.connection.getLatestBlockhash({ commitment }),
+  );
+
+  tx.feePayer ||= provider.publicKey;
+  tx.recentBlockhash ||= latest.blockhash;
+  tx.lastValidBlockHeight ||= latest.lastValidBlockHeight;
+
+  if (signers.length > 0) {
+    tx.partialSign(...signers);
+  }
+
+  const signed = await provider.wallet.signTransaction(tx);
+  const sig = await withRpcRetry(() =>
+    provider.connection.sendRawTransaction(signed.serialize(), {
+      skipPreflight: opts.skipPreflight,
+      preflightCommitment: opts.preflightCommitment || commitment,
+      maxRetries: opts.maxRetries,
+    }),
+  );
+
+  await withRpcRetry(() =>
+    provider.connection.confirmTransaction(
+      {
+        signature: sig,
+        blockhash: tx.recentBlockhash,
+        lastValidBlockHeight: tx.lastValidBlockHeight!,
+      },
+      commitment,
+    ),
+  );
+
+  return sig;
+}
+
+async function getMxePublicKeyWithRetry(
+  provider: anchor.AnchorProvider,
+  programId: PublicKey,
+  retries = 8,
+  delayMs = 1000,
+): Promise<Uint8Array> {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    const key = await getMXEPublicKey(provider, programId);
+    if (key) {
+      return key;
+    }
+    if (attempt < retries) {
+      await new Promise((resolve) => setTimeout(resolve, delayMs));
+    }
+  }
+  throw new Error(`MXE public key unavailable for program ${programId.toString()}`);
 }
 
 async function main() {
+  process.env.ARCIUM_CLUSTER_OFFSET = "456";
+
   const walletPath = process.env.ANCHOR_WALLET || `${os.homedir()}/.config/solana/devnet.json`;
-  const conn = new Connection(RPC_URL, "confirmed");
-  const owner = Keypair.fromSecretKey(
-    new Uint8Array(JSON.parse(fs.readFileSync(walletPath).toString()))
+  const conn = new anchor.web3.Connection(
+    process.env.ANCHOR_PROVIDER_URL || "https://api.devnet.solana.com",
+    "confirmed",
   );
+  const owner = Keypair.fromSecretKey(
+    new Uint8Array(JSON.parse(fs.readFileSync(walletPath).toString())),
+  );
+  const provider = new anchor.AnchorProvider(conn, new anchor.Wallet(owner), {
+    commitment: "confirmed",
+    skipPreflight: true,
+  });
+  provider.sendAndConfirm = (
+    tx: anchor.web3.Transaction,
+    signers?: anchor.web3.Signer[],
+    opts?: anchor.web3.ConfirmOptions,
+  ) => sendAndConfirmCompat(provider, tx, signers || [], opts || {});
+  anchor.setProvider(provider);
+
+  const idl = JSON.parse(fs.readFileSync(path.join(__dirname, "../target/idl/zkkyc.json"), "utf-8"));
+  const program = new anchor.Program(idl, provider) as anchor.Program<any>;
+  const arciumEnv = getArciumEnv();
+  const signPdaAccount = PublicKey.findProgramAddressSync([SIGN_PDA_SEED], PROGRAM_ID)[0];
 
   log("demo_start", {
-    description: "zkKYC compliance check via Arcium MXE",
+    program: PROGRAM_ID.toString(),
     wallet: owner.publicKey.toString(),
-    reference_program: REFERENCE_PROGRAM_ID,
-    note: "Identity attributes encrypted before submission — only compliance boolean stored on-chain",
+    description: "Encrypted KYC check via MXE without exposing PII",
   });
 
-  // Step 1: Simulate identity attributes
-  const identity = {
-    age: 25,           // will be encrypted → MXE checks >= 18
-    residency: 1,      // will be encrypted → MXE checks eligible jurisdiction
-    document_hash: randomBytes(32).toString("hex"), // never goes on-chain
-  };
+  const privateKey = x25519.utils.randomSecretKey();
+  const publicKey = x25519.getPublicKey(privateKey);
+  const mxePublicKey = await getMxePublicKeyWithRetry(provider, PROGRAM_ID);
 
+  const age = BigInt(Math.floor(Math.random() * 48) + 18);
+  const jurisdiction = BigInt(Math.floor(Math.random() * 2));
   log("identity_prepared", {
-    age: "encrypted (>= 18 check)",
-    residency: "encrypted (jurisdiction check)",
-    document_hash: "local only — never submitted",
+    age: "encrypted",
+    jurisdiction: "encrypted",
+    note: `Local sample values prepared for compliance check (${age.toString()}, ${jurisdiction.toString()})`,
   });
 
-  // Step 2: Check wallet balance
-  const balance = await conn.getBalance(owner.publicKey) / 1e9;
-  log("wallet_balance", { sol: balance, sufficient: balance > 0.01 });
+  const nonce = randomBytes(16);
+  const sharedSecret = x25519.getSharedSecret(privateKey, mxePublicKey);
+  const cipher = new RescueCipher(sharedSecret);
+  const ciphertext = cipher.encrypt([age, jurisdiction], nonce);
 
-  if (balance < 0.01) {
-    log("demo_skip", { reason: "insufficient balance", action: "run: solana airdrop 2" });
-    return;
+  const computationOffset = new anchor.BN(randomBytes(8), "hex");
+  const clusterOffset = arciumEnv.arciumClusterOffset;
+
+  try {
+    const sig = await program.methods
+      .verifyKyc(
+        computationOffset,
+        Array.from(ciphertext[0]),
+        Array.from(ciphertext[1]),
+        Array.from(publicKey),
+        new anchor.BN(deserializeLE(nonce).toString()),
+      )
+      .accountsPartial({
+        payer: owner.publicKey,
+        signPdaAccount,
+        mxeAccount: getMXEAccAddress(PROGRAM_ID),
+        mempoolAccount: getMempoolAccAddress(clusterOffset),
+        executingPool: getExecutingPoolAccAddress(clusterOffset),
+        computationAccount: getComputationAccAddress(clusterOffset, computationOffset),
+        compDefAccount: getCompDefAccAddress(
+          PROGRAM_ID,
+          Buffer.from(getCompDefAccOffset("verify_kyc")).readUInt32LE(),
+        ),
+        clusterAccount: getClusterAccAddress(clusterOffset),
+      })
+      .rpc({ skipPreflight: true, commitment: "confirmed" });
+
+    log("kyc_queued", {
+      sig,
+      explorer: `https://explorer.solana.com/tx/${sig}?cluster=devnet`,
+      note: "KYC compliance check queued in MXE cluster 456",
+    });
+
+    const finalizeSig = await Promise.race([
+      awaitComputationFinalization(provider, computationOffset, PROGRAM_ID, "confirmed"),
+      new Promise<never>((_, reject) => setTimeout(() => reject(new Error("timeout")), 90_000)),
+    ]);
+
+    log("kyc_success", {
+      queueSig: sig,
+      finalizeSig,
+      clusterOffset,
+    });
+  } catch (e: any) {
+    log("kyc_fail", {
+      message: e.message || String(e),
+      logs: e.logs || [],
+      code: e.code,
+      raw: (() => { try { return JSON.stringify(e); } catch { return String(e); } })(),
+    });
+    process.exit(1);
   }
-
-  // Step 3: Verify reference program exists on devnet
-  const programInfo = await conn.getAccountInfo(new PublicKey(REFERENCE_PROGRAM_ID));
-  log("program_check", {
-    program: REFERENCE_PROGRAM_ID,
-    active: programInfo !== null,
-    note: "encrypted-identity-mxe deployed and active on devnet",
-  });
-
-  // Step 4: Simulate encryption (in production: use x25519-RescueCipher with MXE pubkey)
-  const simulatedCiphertext = randomBytes(32);
-  log("encryption_simulated", {
-    algorithm: "x25519-RescueCipher",
-    ciphertext_length: simulatedCiphertext.length,
-    pii_on_chain: false,
-    note: "In production: import RescueCipher from @arcium-hq/client",
-  });
-
-  log("demo_complete", {
-    result: "Identity attributes encrypted. Ready to submit to MXE.",
-    next_step: "Use encrypted-identity-mxe program to submit encrypted attributes to cluster 456",
-    program: `https://explorer.solana.com/address/${REFERENCE_PROGRAM_ID}?cluster=devnet`,
-    repo: "https://github.com/gnoesy/encrypted-identity-mxe",
-  });
 }
 
-main().catch(e => {
+main().catch((e) => {
   console.error(JSON.stringify({ event: "fatal", message: e.message }));
   process.exit(1);
 });
