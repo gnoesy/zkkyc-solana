@@ -54,6 +54,36 @@ async function withRpcRetry<T>(fn: () => Promise<T>, retries = 8): Promise<T> {
   }
 }
 
+async function confirmSignatureByPolling(
+  connection: anchor.web3.Connection,
+  signature: string,
+  lastValidBlockHeight: number,
+  commitment: anchor.web3.Commitment,
+): Promise<void> {
+  for (;;) {
+    const [{ value: statuses }, currentBlockHeight] = await Promise.all([
+      withRpcRetry(() => connection.getSignatureStatuses([signature])),
+      withRpcRetry(() => connection.getBlockHeight(commitment)),
+    ]);
+
+    const status = statuses[0];
+    if (status?.err) {
+      throw new Error(`Signature ${signature} failed: ${JSON.stringify(status.err)}`);
+    }
+    if (
+      status &&
+      (status.confirmationStatus === "confirmed" ||
+        status.confirmationStatus === "finalized")
+    ) {
+      return;
+    }
+    if (currentBlockHeight > lastValidBlockHeight) {
+      throw new Error(`Signature ${signature} has expired: block height exceeded.`);
+    }
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+  }
+}
+
 async function sendAndConfirmCompat(
   provider: anchor.AnchorProvider,
   tx: anchor.web3.Transaction,
@@ -83,12 +113,10 @@ async function sendAndConfirmCompat(
   );
 
   await withRpcRetry(() =>
-    provider.connection.confirmTransaction(
-      {
-        signature: sig,
-        blockhash: tx.recentBlockhash,
-        lastValidBlockHeight: tx.lastValidBlockHeight!,
-      },
+    confirmSignatureByPolling(
+      provider.connection,
+      sig,
+      tx.lastValidBlockHeight!,
       commitment,
     ),
   );
@@ -119,8 +147,11 @@ async function main() {
 
   const walletPath = process.env.ANCHOR_WALLET || `${os.homedir()}/.config/solana/devnet.json`;
   const conn = new anchor.web3.Connection(
-    process.env.ANCHOR_PROVIDER_URL || "https://api.devnet.solana.com",
-    "confirmed",
+    process.env.ANCHOR_PROVIDER_URL || process.env.RPC_URL || "https://api.devnet.solana.com",
+    {
+      commitment: "confirmed",
+      wsEndpoint: process.env.WS_RPC_URL,
+    },
   );
   const owner = Keypair.fromSecretKey(
     new Uint8Array(JSON.parse(fs.readFileSync(walletPath).toString())),
