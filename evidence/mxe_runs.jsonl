@@ -377,3 +377,236 @@
 {"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-03-31T23:48:09.525Z"}
 {"event":"balance","sol":1.459498509,"ts":"2026-03-31T23:48:10.119Z"}
 {"event":"error","msg":"Signature 2Lz7WceavrTrUrVKUWsPbwcr2fd5iM7ACx86i9zZP5M3nVWi3Hi52mU6wQxeCzPkXoNXMb5FnkRGpbXPkwXqvrr3 has expired: block height exceeded.","ts":"2026-03-31T23:48:56.635Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T00:18:57.920Z"}
+{"event":"balance","sol":1.450651219,"ts":"2026-04-01T00:18:58.506Z"}
+{"event":"error","msg":"Signature 7ghjZnouSdXUp3V2VocWGLV4p8r47uVDJeUKC7i2MXqToRC4dCUcLxpuo118qJ9Mk5c78qean96sYQiiWqQsvCW has expired: block height exceeded.","ts":"2026-04-01T00:19:44.477Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T00:42:20.158Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (60, 1)","ts":"2026-04-01T00:42:20.707Z"}
+{"event":"kyc_queued","sig":"5YgwPWPTdxap9MBkZq2SVmjgSuKAm6k2iktzz2RV7fX4s6XX8BJuLF3RU7vFpujpkuAF5ngDdki9AFP4c3FUSLcH","explorer":"https://explorer.solana.com/tx/5YgwPWPTdxap9MBkZq2SVmjgSuKAm6k2iktzz2RV7fX4s6XX8BJuLF3RU7vFpujpkuAF5ngDdki9AFP4c3FUSLcH?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T00:42:23.787Z"}
+{"event":"kyc_success","queueSig":"5YgwPWPTdxap9MBkZq2SVmjgSuKAm6k2iktzz2RV7fX4s6XX8BJuLF3RU7vFpujpkuAF5ngDdki9AFP4c3FUSLcH","finalizeSig":"EPkqoPoLnPUeFpE5PNTtYEtoWBqttLQDEXEJbCrc5siPm7XQ7mgDqE6VxUknYarYLjmnwSzN9ASiLcAxq413wyL","clusterOffset":456,"ts":"2026-04-01T00:42:56.973Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T00:49:45.670Z"}
+{"event":"balance","sol":1.441810675,"ts":"2026-04-01T00:49:46.229Z"}
+{"event":"error","msg":"Signature CkZfQ21eAKKLLywSFsG93152jtr472u5kEoPgNiv1KGfkJx1XW1gvQtBGoGoYA4EmkpXUj4YHCBZquyc6rBHj3q has expired: block height exceeded.","ts":"2026-04-01T00:50:31.267Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T01:20:32.607Z"}
+{"event":"balance","sol":1.432915223,"ts":"2026-04-01T01:20:33.192Z"}
+{"event":"error","msg":"Signature 2AzMZKYBjsLvcAm6kmYnBp8QykoFiFYbiLuYRrPHzsTB3WumBe3cEVJEcYqttMt5Rw3KND4Vu9CoqZLYDAsdyH28 has expired: block height exceeded.","ts":"2026-04-01T01:21:18.909Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T01:43:54.360Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (52, 1)","ts":"2026-04-01T01:43:54.883Z"}
+{"event":"kyc_queued","sig":"46EfD4TKeRht53no3M1aDJBFFxb2a7Es8PNTJVQNd9ccm4quoLLVpM8LEo3HzHbsJg65LrLaYXCVd7wgwuVsHeHJ","explorer":"https://explorer.solana.com/tx/46EfD4TKeRht53no3M1aDJBFFxb2a7Es8PNTJVQNd9ccm4quoLLVpM8LEo3HzHbsJg65LrLaYXCVd7wgwuVsHeHJ?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T01:43:58.435Z"}
+{"event":"kyc_success","queueSig":"46EfD4TKeRht53no3M1aDJBFFxb2a7Es8PNTJVQNd9ccm4quoLLVpM8LEo3HzHbsJg65LrLaYXCVd7wgwuVsHeHJ","finalizeSig":"3CSer3TB8hi8WL8CFwspmhxfH2CFmxEpeVKLS7jVcZSVrQv3MxEgkX5TL8RWDr5pRSPLNNxHS5t52yNUhYw5uKRp","clusterOffset":456,"ts":"2026-04-01T01:44:29.204Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T01:51:20.131Z"}
+{"event":"balance","sol":1.424067933,"ts":"2026-04-01T01:51:20.724Z"}
+{"event":"error","msg":"Signature 4XK6b5qPsfMV7NaHF3Mqr9cTZ2hLj4sXS2uNR7dDQtj8t1Mt5QHZ78LRX29Y89H1jYehu8WnBTKcuUo1Y2X4hLns has expired: block height exceeded.","ts":"2026-04-01T01:52:05.780Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T02:22:07.233Z"}
+{"event":"balance","sol":1.415228307,"ts":"2026-04-01T02:22:07.851Z"}
+{"event":"error","msg":"Signature eUjjLxLbVLmgGFp4TJ4TAbCDLgJQqRSrRyQCqRmAZRbyheF59TpX4krw72ZDYTJtnxMsmAWDMQ8Cm4d5xobfVRW has expired: block height exceeded.","ts":"2026-04-01T02:22:53.548Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T02:45:29.311Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (22, 0)","ts":"2026-04-01T02:45:29.897Z"}
+{"event":"kyc_queued","sig":"2rCbFGS3hYzUhsr5HSF7Mbe6crRfnRXWokAZxsUi6E7WugtEHpNhn9CqH3L2qfXXQ8ij9MHXpeM1JaLjszY8JT3w","explorer":"https://explorer.solana.com/tx/2rCbFGS3hYzUhsr5HSF7Mbe6crRfnRXWokAZxsUi6E7WugtEHpNhn9CqH3L2qfXXQ8ij9MHXpeM1JaLjszY8JT3w?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T02:45:33.022Z"}
+{"event":"kyc_success","queueSig":"2rCbFGS3hYzUhsr5HSF7Mbe6crRfnRXWokAZxsUi6E7WugtEHpNhn9CqH3L2qfXXQ8ij9MHXpeM1JaLjszY8JT3w","finalizeSig":"51WxZ24b23AzQmXtyDsqCcD1ivBdnJbBxJV3aSghsNYd1UQk4W5Hzh45uU2TpKBmyTqXo31JQ13X2uYaxkNwLDaj","clusterOffset":456,"ts":"2026-04-01T02:46:05.802Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T02:52:54.668Z"}
+{"event":"balance","sol":1.40633356,"ts":"2026-04-01T02:52:55.327Z"}
+{"event":"error","msg":"Signature 3VN3fYFQTSb6bx9qUPYeRzbZAZS2V8Q9NJqAc2L5jz2Q2uN3RhN9LVrn6adPhE6FUT8BA1xKqwF9iuRJ753ZLVyq has expired: block height exceeded.","ts":"2026-04-01T02:53:42.401Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T03:23:43.727Z"}
+{"event":"balance","sol":1.393065125,"ts":"2026-04-01T03:23:44.316Z"}
+{"event":"error","msg":"Signature 2dV76K1QKVfbeKLTGqNiqXCjE8NxgHpsyXMi1fcn6jq4qS1GgcuyNiLahUSE48qFMEV9ekRzfyMoTasQ9rqwXLcS has expired: block height exceeded.","ts":"2026-04-01T03:24:31.067Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T03:47:03.919Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (49, 0)","ts":"2026-04-01T03:47:04.504Z"}
+{"event":"kyc_queued","sig":"4xcuByQc91qm5bhahbh745t6uufk3nExwZLFCaYLZpPjzkRKF2NhQzffjmSerm1msGwCpkZenjt3wbTrrAkrEUVi","explorer":"https://explorer.solana.com/tx/4xcuByQc91qm5bhahbh745t6uufk3nExwZLFCaYLZpPjzkRKF2NhQzffjmSerm1msGwCpkZenjt3wbTrrAkrEUVi?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T03:47:07.573Z"}
+{"event":"kyc_success","queueSig":"4xcuByQc91qm5bhahbh745t6uufk3nExwZLFCaYLZpPjzkRKF2NhQzffjmSerm1msGwCpkZenjt3wbTrrAkrEUVi","finalizeSig":"2msMdvgXqiyGbtuzExwsavNCUaUR8pYQqPUjVV22a8iFYPXmwsCBCkWkG2q52w4k6tzMVjcpKu9m6v7K3FLDxzru","clusterOffset":456,"ts":"2026-04-01T03:47:39.554Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T03:54:32.379Z"}
+{"event":"balance","sol":1.388644006,"ts":"2026-04-01T03:54:32.902Z"}
+{"event":"error","msg":"Signature 2h1bM6ZitUYygLdVVNtonhKD6pPGH5HWnxUEhS41PDa748yvD2oiYGDy6eNtHH4ZVaeXaC1nKonKjL1JNvHv5AYK has expired: block height exceeded.","ts":"2026-04-01T03:55:19.165Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T04:25:20.611Z"}
+{"event":"balance","sol":1.375330931,"ts":"2026-04-01T04:25:21.188Z"}
+{"event":"error","msg":"Signature 5YZPaagoXJQ5cMeuT1FmKPW79cRXdWyCtuY8VubVGvDQRFu1KP43QKzCPQabJ9kGb1nyKUzbyjAthfNfQSHKVjSu has expired: block height exceeded.","ts":"2026-04-01T04:26:06.731Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T04:48:38.188Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (62, 1)","ts":"2026-04-01T04:48:38.725Z"}
+{"event":"kyc_queued","sig":"5k7KAuwS2q41BvsHiuBhM6Zcz19ZNBpDJp4E3tPXGUGi2Gy1WKARK6DYF9M89WTMh3L8M6WYDEqvzpfDikt34mU8","explorer":"https://explorer.solana.com/tx/5k7KAuwS2q41BvsHiuBhM6Zcz19ZNBpDJp4E3tPXGUGi2Gy1WKARK6DYF9M89WTMh3L8M6WYDEqvzpfDikt34mU8?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T04:48:41.754Z"}
+{"event":"kyc_success","queueSig":"5k7KAuwS2q41BvsHiuBhM6Zcz19ZNBpDJp4E3tPXGUGi2Gy1WKARK6DYF9M89WTMh3L8M6WYDEqvzpfDikt34mU8","finalizeSig":"5nGy6jzazf7thEe61VrK8NNeMsvwXnfyH2mjHVurBfpRomeNGQTfW7XRX8arkv8FpztfKcAAkznZs4kCPEfqWcoj","clusterOffset":456,"ts":"2026-04-01T04:49:15.162Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T04:56:08.294Z"}
+{"event":"balance","sol":1.370904786,"ts":"2026-04-01T04:56:08.978Z"}
+{"event":"error","msg":"Signature 5hSxH6bsN3JMe5UkanbBP8712isA4f4C2JKaDnt49NBVkKEkjb53YHZuDwDA1NEB6ui7TeaZ76MQSpS2JDhQykdW has expired: block height exceeded.","ts":"2026-04-01T04:56:54.948Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T05:26:56.204Z"}
+{"event":"balance","sol":1.357645644,"ts":"2026-04-01T05:26:56.785Z"}
+{"event":"error","msg":"Signature 46qfCFDMDwWV429oXiWvFs24xRQ6vKaLpZdGCXQfGk7Yd3aqAn4SRyKEUxo6vxBCGgpL9EJRMFTUWpE4sNhCU9DD has expired: block height exceeded.","ts":"2026-04-01T05:27:42.099Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T05:50:12.692Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (40, 0)","ts":"2026-04-01T05:50:13.262Z"}
+{"event":"kyc_queued","sig":"5xXAnpMPhgDrDGvmNGN59akBPkkgBi8JabFAqf8K6JaLysBPj1F4tmTeWFfGNSRc8pUdZjAcDnPwiZuKZgC9FSnA","explorer":"https://explorer.solana.com/tx/5xXAnpMPhgDrDGvmNGN59akBPkkgBi8JabFAqf8K6JaLysBPj1F4tmTeWFfGNSRc8pUdZjAcDnPwiZuKZgC9FSnA?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T05:50:16.306Z"}
+{"event":"kyc_success","queueSig":"5xXAnpMPhgDrDGvmNGN59akBPkkgBi8JabFAqf8K6JaLysBPj1F4tmTeWFfGNSRc8pUdZjAcDnPwiZuKZgC9FSnA","finalizeSig":"3PfP2Yrp2McPdMSwVNcqPiXoaNkQg7xPRGcUpUzW7G3HYGTJ1ynHEh3rMVQEuxSBdip2bf5UxctQMeaW2DrFaX3m","clusterOffset":456,"ts":"2026-04-01T05:50:48.286Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T05:57:43.321Z"}
+{"event":"balance","sol":1.353172016,"ts":"2026-04-01T05:57:43.948Z"}
+{"event":"error","msg":"Signature 5PrwwL1mig9vBHXWtoUGVgxhn5CanrboSedMAxYfCX3MrmHgqwv7qyzFsotN8aJv9cQRU9K7ZeT5LP7ngtmgfKe1 has expired: block height exceeded.","ts":"2026-04-01T05:58:30.949Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T06:28:32.279Z"}
+{"event":"balance","sol":1.339903581,"ts":"2026-04-01T06:28:32.899Z"}
+{"event":"error","msg":"Signature bice6id3zp3rNR2En9AbnKDL5pebiZ6TRZFYwTFjzNLiSdAdHyk88rMpnoXYWyou7PycqFgCrSxyyCEC7UbaskW has expired: block height exceeded.","ts":"2026-04-01T06:29:18.220Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T06:51:47.226Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (37, 1)","ts":"2026-04-01T06:51:47.811Z"}
+{"event":"kyc_queued","sig":"4G1sbpaPgd9MWjpKobxtxDnsVdGHcieBWvwpaFBNuQpoRkT7Q1jzhTJm9FsovxohdbVf2p1wX8N5N4jfcu1nVGdT","explorer":"https://explorer.solana.com/tx/4G1sbpaPgd9MWjpKobxtxDnsVdGHcieBWvwpaFBNuQpoRkT7Q1jzhTJm9FsovxohdbVf2p1wX8N5N4jfcu1nVGdT?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T06:51:50.910Z"}
+{"event":"kyc_success","queueSig":"4G1sbpaPgd9MWjpKobxtxDnsVdGHcieBWvwpaFBNuQpoRkT7Q1jzhTJm9FsovxohdbVf2p1wX8N5N4jfcu1nVGdT","finalizeSig":"3jqdat9qRwJTUAaFJzYjQwKidDuRtHFGGEyanFKqZM3eRnbFH5hmEJsDS9wvyhMnNe1qMYVHjBPb22k94DyyZCeZ","clusterOffset":456,"ts":"2026-04-01T06:52:24.962Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T06:59:19.451Z"}
+{"event":"balance","sol":1.335484212,"ts":"2026-04-01T06:59:20.052Z"}
+{"event":"error","msg":"Signature MNqayEcoWDvA2tnknbYcGsRCgD6BSm97RkSEr7K4RaLrQxtjr9wZV3E6gHLyNjLjd3nFVuQzSY1z2KR1VbBdqX3 has expired: block height exceeded.","ts":"2026-04-01T07:00:04.882Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T07:30:06.348Z"}
+{"event":"balance","sol":1.322169118,"ts":"2026-04-01T07:30:07.018Z"}
+{"event":"error","msg":"Signature 3DBvpV6PmGDueTqZUird1koPizMhvBBrMJdj4XGZ4wmUGvEWes2ceD3ZhQapPbQgGW8r6cotQaPkQZCsMPGZBJrR has expired: block height exceeded.","ts":"2026-04-01T07:30:53.113Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T07:53:21.705Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (24, 1)","ts":"2026-04-01T07:53:22.236Z"}
+{"event":"kyc_queued","sig":"4yrNKrreHduhrGCTHcmdEkwiQLR3T1DJfKzGs9gW8dWdXU93kpTBRuEZF14sefMyE5f2pqBi4Z49v9ix2QNdfSTG","explorer":"https://explorer.solana.com/tx/4yrNKrreHduhrGCTHcmdEkwiQLR3T1DJfKzGs9gW8dWdXU93kpTBRuEZF14sefMyE5f2pqBi4Z49v9ix2QNdfSTG?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T07:53:25.272Z"}
+{"event":"kyc_success","queueSig":"4yrNKrreHduhrGCTHcmdEkwiQLR3T1DJfKzGs9gW8dWdXU93kpTBRuEZF14sefMyE5f2pqBi4Z49v9ix2QNdfSTG","finalizeSig":"5ykQLLqyciqk88HXwXk2zNyrGQ9bh8ZpQMdaULDvyQNDy9Uj2FADxQPhWfmsBqEmitsr3Vc7dPXTRyRU25fSY7CH","clusterOffset":456,"ts":"2026-04-01T07:53:57.523Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T08:00:54.571Z"}
+{"event":"balance","sol":1.317747972,"ts":"2026-04-01T08:00:55.147Z"}
+{"event":"error","msg":"Signature 2QVWN5NirTwkLhipCL9hKF8b9wxVNuhz6qhh6dqtcm7h2e7A1aZ8afLFVU14Jn1PPkjHcfKZBMfdvsRXcRxgFgYB has expired: block height exceeded.","ts":"2026-04-01T08:01:41.772Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T08:31:43.305Z"}
+{"event":"balance","sol":1.304484381,"ts":"2026-04-01T08:31:43.843Z"}
+{"event":"error","msg":"Signature 4QTFxvnVRbwf1nkocCtZ6Q6MfyssKcZDYh6T1TLHES3YcUXwGEK7cf4ETtuforFQ5UdPrMbRerwPrqnkd89vTCs4 has expired: block height exceeded.","ts":"2026-04-01T08:32:29.725Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T08:54:56.205Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (38, 0)","ts":"2026-04-01T08:54:56.745Z"}
+{"event":"kyc_queued","sig":"xcZ9r2tN1xrpid6p22FCzmgy5B1h9tp5xD6bPoxi4og9YzPcyNMCgNvE9e8z14FEiPKrvWnGNY5vohPPPfLJ5V8","explorer":"https://explorer.solana.com/tx/xcZ9r2tN1xrpid6p22FCzmgy5B1h9tp5xD6bPoxi4og9YzPcyNMCgNvE9e8z14FEiPKrvWnGNY5vohPPPfLJ5V8?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T08:54:59.844Z"}
+{"event":"kyc_success","queueSig":"xcZ9r2tN1xrpid6p22FCzmgy5B1h9tp5xD6bPoxi4og9YzPcyNMCgNvE9e8z14FEiPKrvWnGNY5vohPPPfLJ5V8","finalizeSig":"4c26MxNFprytNZvFwcwV8GVuo9hGugMiKiSGvfQTDLSEFApsKCCY5etoHHgxXcLqwgoj2uQpQa3okEpMUaZXxUzY","clusterOffset":456,"ts":"2026-04-01T08:55:32.103Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T09:02:31.054Z"}
+{"event":"balance","sol":1.300009582,"ts":"2026-04-01T09:02:31.652Z"}
+{"event":"error","msg":"Signature 28CUG8rE2DJ7EtGSnYdENBw6SF68GjMvUucp1eAag74TiZe8z9cg4ox2R3z7Tg7HrNY6goELYkSfrbdZhAH4Td2x has expired: block height exceeded.","ts":"2026-04-01T09:03:18.155Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T09:33:19.587Z"}
+{"event":"balance","sol":1.286743598,"ts":"2026-04-01T09:33:20.192Z"}
+{"event":"error","msg":"Signature 4RVQnb4HqKqvcN3a39vDwqUGxvdscwXHfHCFdW53d7cQNgrwVjMDpeT1dyEYSCj2j9a9LCjSzcVcBv78j56ChUmy has expired: block height exceeded.","ts":"2026-04-01T09:34:06.196Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T09:56:30.871Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (58, 0)","ts":"2026-04-01T09:56:31.460Z"}
+{"event":"kyc_queued","sig":"qvcNQHCXKbn5xzz1wCaqYUcTRSmFfBqMhD51RiYo3tRJ6iMGT5XM6shbRy8KfxLLvvHnsVeyRZjaG6Y69zu12eZ","explorer":"https://explorer.solana.com/tx/qvcNQHCXKbn5xzz1wCaqYUcTRSmFfBqMhD51RiYo3tRJ6iMGT5XM6shbRy8KfxLLvvHnsVeyRZjaG6Y69zu12eZ?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T09:56:34.541Z"}
+{"event":"kyc_success","queueSig":"qvcNQHCXKbn5xzz1wCaqYUcTRSmFfBqMhD51RiYo3tRJ6iMGT5XM6shbRy8KfxLLvvHnsVeyRZjaG6Y69zu12eZ","finalizeSig":"4JqJ1WeHVsscwcU5CScGpgiwX1BWUsUhgNofD9ZTCCNGHWRhAaV9bTEgW1qNvBoewp19g6hupCG8Moz8Qu2tndjP","clusterOffset":456,"ts":"2026-04-01T09:57:09.181Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T10:04:07.605Z"}
+{"event":"balance","sol":1.277877296,"ts":"2026-04-01T10:04:08.263Z"}
+{"event":"error","msg":"Signature 59Ph3hGViaxS48Z6vu67REY3P5bL2mT2SrXvWWU47GZoAL5FjiT4LDvdSLj8ua5eTGZaMQRM87oFhYZ8GwGJNEeM has expired: block height exceeded.","ts":"2026-04-01T10:04:54.154Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T10:34:55.555Z"}
+{"event":"balance","sol":1.269005624,"ts":"2026-04-01T10:34:56.093Z"}
+{"event":"error","msg":"Signature 32UszKdzMtyKh7NAKnPWeTy86MwWyYzLK34agkjdGU7VXrzpSiAurmUL2CzNFXh2w6XwU6M6cij1rsBbTz2uZ71H has expired: block height exceeded.","ts":"2026-04-01T10:35:42.002Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T10:58:05.438Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (50, 0)","ts":"2026-04-01T10:58:06.027Z"}
+{"event":"kyc_queued","sig":"j1UoYW4xPRHvhuGbzumJjxDkhTDQt62QtLEc1hHTKwGvyG971wZBqhdTfffTYfnJaLd2n9rGA7sLbjRq9HsRv8Y","explorer":"https://explorer.solana.com/tx/j1UoYW4xPRHvhuGbzumJjxDkhTDQt62QtLEc1hHTKwGvyG971wZBqhdTfffTYfnJaLd2n9rGA7sLbjRq9HsRv8Y?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T10:58:09.191Z"}
+{"event":"kyc_success","queueSig":"j1UoYW4xPRHvhuGbzumJjxDkhTDQt62QtLEc1hHTKwGvyG971wZBqhdTfffTYfnJaLd2n9rGA7sLbjRq9HsRv8Y","finalizeSig":"3wBPTHs1qSE2rNLY5EJuma6HAXjyFzZLACvNcdZSzAyUBHT5oBuYHdNEfCiL85oRitoKUyDwCAmxqwdvRJjManDK","clusterOffset":456,"ts":"2026-04-01T10:58:42.861Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T11:05:43.305Z"}
+{"event":"balance","sol":1.260161368,"ts":"2026-04-01T11:05:43.885Z"}
+{"event":"error","msg":"Signature 2thQtt5LqCRDWvaLXjAoqPZJRfUFdMvyzan1MuqgfQ1TRzz8DyGS25m5Gnhxjj7uojMj7QQjNPTdYbYhPVYKKizA has expired: block height exceeded.","ts":"2026-04-01T11:06:29.710Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T11:36:31.041Z"}
+{"event":"balance","sol":1.251292066,"ts":"2026-04-01T11:36:31.655Z"}
+{"event":"error","msg":"Signature 5qGRpNp6QaSLMvcunTqPYDzb2icPdpdhDUusuRuYYqpKLFWagPPHggUZCp4Uu2iPmhD7RRB3nBG2QJcqfQKmmtUZ has expired: block height exceeded.","ts":"2026-04-01T11:37:17.308Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T11:59:39.951Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (27, 1)","ts":"2026-04-01T11:59:40.545Z"}
+{"event":"kyc_queued","sig":"3F6k5mbYRzpuby6UiGBy4o7MD8QdMhsvYaabMmwTgGDEW6ZofknLNctUgrwn4YzeWmaGFxUAAza3w6FLGncc6uEm","explorer":"https://explorer.solana.com/tx/3F6k5mbYRzpuby6UiGBy4o7MD8QdMhsvYaabMmwTgGDEW6ZofknLNctUgrwn4YzeWmaGFxUAAza3w6FLGncc6uEm?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T11:59:43.706Z"}
+{"event":"kyc_success","queueSig":"3F6k5mbYRzpuby6UiGBy4o7MD8QdMhsvYaabMmwTgGDEW6ZofknLNctUgrwn4YzeWmaGFxUAAza3w6FLGncc6uEm","finalizeSig":"2Un5UmwkoQbokGVfWeGxQ1dVzjWHFayqRVrydLg8xhbsqzQUs9gDJZUaRLJ3UhrrUFTS4kWGFE8wW8b7Ww79YMh9","clusterOffset":456,"ts":"2026-04-01T12:00:16.818Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T12:07:18.688Z"}
+{"event":"balance","sol":1.242420774,"ts":"2026-04-01T12:07:19.349Z"}
+{"event":"error","msg":"Signature 5bazrsgRkeviBrKwLrbUhNwrh6vUYtAYjTBF1cPp7xDhXqZnBhQBr48vNmMgFGLhCUy4dXXCnS7AUMQwD2Gu8v3g has expired: block height exceeded.","ts":"2026-04-01T12:08:05.680Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T12:38:07.134Z"}
+{"event":"balance","sol":1.233578183,"ts":"2026-04-01T12:38:07.718Z"}
+{"event":"error","msg":"Signature 5MqgFj296DynHv1MKQGivbqTA1TavxBiD4XXmHk8ETJz5EWSaRFNCwyBYT4AiDRn7Hh5BnVJ2FpMYqXmgZ3jBxdn has expired: block height exceeded.","ts":"2026-04-01T12:38:54.191Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T13:01:14.458Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (33, 1)","ts":"2026-04-01T13:01:14.999Z"}
+{"event":"kyc_queued","sig":"3LPiGEteaynJhJuWJKdMFAno6m9gp71tkFXcSNwpWt6VrQ8pbmF3ZrsiDQ4jqgtniRbaQjdQoBAMBmWLKSNpXAWn","explorer":"https://explorer.solana.com/tx/3LPiGEteaynJhJuWJKdMFAno6m9gp71tkFXcSNwpWt6VrQ8pbmF3ZrsiDQ4jqgtniRbaQjdQoBAMBmWLKSNpXAWn?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T13:01:18.105Z"}
+{"event":"kyc_success","queueSig":"3LPiGEteaynJhJuWJKdMFAno6m9gp71tkFXcSNwpWt6VrQ8pbmF3ZrsiDQ4jqgtniRbaQjdQoBAMBmWLKSNpXAWn","finalizeSig":"KUiuUdi672hjhTW1SN4VDm1kz619Jx2NWA9gbVqxPdQ6q33YxFqBWhzsuXFWGcs6KDT4UiAN5mxCrtweLdtigvq","clusterOffset":456,"ts":"2026-04-01T13:01:51.425Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T13:08:55.655Z"}
+{"event":"balance","sol":1.224710757,"ts":"2026-04-01T13:08:56.338Z"}
+{"event":"error","msg":"Signature 4cBGy1Kj4hLiotyuzzVr3jH8xgazQqhM9gCfFAftCYyFS6D2UU8KG1JYiWaTwWHbMErJNZQxiWhA7wcmt338uWct has expired: block height exceeded.","ts":"2026-04-01T13:09:42.830Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T13:39:44.397Z"}
+{"event":"balance","sol":1.215840889,"ts":"2026-04-01T13:39:45.028Z"}
+{"event":"error","msg":"Signature 5DMxerXPWkAsGkNJV7XBmKbdjhD811GvWKXJjPry5gbuPpU41wqZFZnq2x6w4Asz3m3pbv9DkL11mfAQjNtkQ4vx has expired: block height exceeded.","ts":"2026-04-01T13:40:31.340Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T14:02:49.790Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (20, 1)","ts":"2026-04-01T14:02:50.446Z"}
+{"event":"kyc_queued","sig":"527VgZLjuPrdb6BPRa53z1nHkquq54NaqSa73eBFN2L75fBuqJ2HxUWyzAJLvPREm2qs1mnZHgxdeTWXdcXf5q4S","explorer":"https://explorer.solana.com/tx/527VgZLjuPrdb6BPRa53z1nHkquq54NaqSa73eBFN2L75fBuqJ2HxUWyzAJLvPREm2qs1mnZHgxdeTWXdcXf5q4S?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T14:02:53.540Z"}
+{"event":"kyc_success","queueSig":"527VgZLjuPrdb6BPRa53z1nHkquq54NaqSa73eBFN2L75fBuqJ2HxUWyzAJLvPREm2qs1mnZHgxdeTWXdcXf5q4S","finalizeSig":"51EGYDPVUeEeaAg3GoXaQbBKe9muqsEk4VAFP2LvpZT3NSCSz8vvaQTDCgiwNzMAfDEcNQos9hj5xKsEFTmtYiUR","clusterOffset":456,"ts":"2026-04-01T14:03:26.063Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T14:10:32.594Z"}
+{"event":"balance","sol":1.206998403,"ts":"2026-04-01T14:10:33.388Z"}
+{"event":"error","msg":"Signature 2v285CkbRCi6UjgGKgFqEqpr4absGSNKbSKXWdBZxtbnGmmN1Smq8EPjzRDQsWvXKxd9UZbSbU86Vd1PTDVNMSep has expired: block height exceeded.","ts":"2026-04-01T14:11:20.294Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T14:41:21.675Z"}
+{"event":"balance","sol":1.198105164,"ts":"2026-04-01T14:41:22.211Z"}
+{"event":"error","msg":"Signature 2Qbwcozzd1xHMwAZG29vAu5mEcxjAAhwsmN7cdrwsYrftVvoWMnTNrc2Esvc75w63tQvab41JUfZtHcDGVe5Lzms has expired: block height exceeded.","ts":"2026-04-01T14:42:09.162Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T15:04:24.672Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (62, 0)","ts":"2026-04-01T15:04:25.283Z"}
+{"event":"kyc_queued","sig":"2VAxmopSJDizquR3vfzQxM5vYER4wQXEMcBik7XRer1xTtPZnkjXZABk7SJ1cHv2hHNz1puDoN41xa5HMGT3vFjf","explorer":"https://explorer.solana.com/tx/2VAxmopSJDizquR3vfzQxM5vYER4wQXEMcBik7XRer1xTtPZnkjXZABk7SJ1cHv2hHNz1puDoN41xa5HMGT3vFjf?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T15:04:28.446Z"}
+{"event":"kyc_success","queueSig":"2VAxmopSJDizquR3vfzQxM5vYER4wQXEMcBik7XRer1xTtPZnkjXZABk7SJ1cHv2hHNz1puDoN41xa5HMGT3vFjf","finalizeSig":"2kA52JfRQhfrYom8onMECMK8Yrw19FLE1kp2tLnPWdRGkE4fK4suFy6Z2zDAyhRis74vHbQgNgWtyj4anUKSi9nx","clusterOffset":456,"ts":"2026-04-01T15:05:01.986Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T15:12:10.679Z"}
+{"event":"balance","sol":1.189257877,"ts":"2026-04-01T15:12:11.228Z"}
+{"event":"error","msg":"Signature 59wi8koFqeQnDx2JdQ7Rs3WUZwWkWs5MuLLVPfutkgdzv4e352o3gvUK6focKKpRoqybQR1MuAZXMqfboV7X7ytJ has expired: block height exceeded.","ts":"2026-04-01T15:12:57.090Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T15:42:58.613Z"}
+{"event":"balance","sol":1.17599497,"ts":"2026-04-01T15:42:59.193Z"}
+{"event":"error","msg":"Signature wy17FYDjSRFrT3maTWGk7dYA8yBxBdBR4XpJ1mc6gqcPbCdcjyVcbQeJjBXp4RgVcj8zQ6NijRyt28Tmyep17KE has expired: block height exceeded.","ts":"2026-04-01T15:43:45.450Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T16:05:59.434Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (45, 1)","ts":"2026-04-01T16:05:59.980Z"}
+{"event":"kyc_queued","sig":"co8VBUkrymMjndXyJSjkopZD8sCinytEvL9iDe8tW3qhpFnhQWZPvHqbRZFJpzydyTnaYJnVnzCWLyZnpwzwPkz","explorer":"https://explorer.solana.com/tx/co8VBUkrymMjndXyJSjkopZD8sCinytEvL9iDe8tW3qhpFnhQWZPvHqbRZFJpzydyTnaYJnVnzCWLyZnpwzwPkz?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T16:06:02.999Z"}
+{"event":"kyc_success","queueSig":"co8VBUkrymMjndXyJSjkopZD8sCinytEvL9iDe8tW3qhpFnhQWZPvHqbRZFJpzydyTnaYJnVnzCWLyZnpwzwPkz","finalizeSig":"4ZsSTNWtbpzAvrYsWNaGsYdyCG8CJ1PrftYDX4ji2M1B787FG6m1sHLK84JqBZUt4aai6ZiZRKv3v4wsdToadJax","clusterOffset":456,"ts":"2026-04-01T16:06:37.097Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T16:13:46.645Z"}
+{"event":"balance","sol":1.171522295,"ts":"2026-04-01T16:13:47.311Z"}
+{"event":"error","msg":"Signature 3NTemQuStzCLosX9JQfgfRnWdX1sK4kRhiZtEBH3SuetsxMSgjgiy8wCGs3CDLHLjHc1xyNRxcKsJHsxtFPpugD8 has expired: block height exceeded.","ts":"2026-04-01T16:14:33.711Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T16:44:35.254Z"}
+{"event":"balance","sol":1.162675008,"ts":"2026-04-01T16:44:35.838Z"}
+{"event":"error","msg":"Signature 2rKs7czDszdA28ArBqiBiZWTLttRX4fytFWThVG3s4GGVW9j26shME4BasCdjuuFd5QzCp2QP2RtRR4KqK8De9GR has expired: block height exceeded.","ts":"2026-04-01T16:45:22.148Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T17:07:33.794Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (40, 1)","ts":"2026-04-01T17:07:34.418Z"}
+{"event":"kyc_queued","sig":"2EuATaYvZNcA8eEaYTSfrcWC66Fc9amV59urgrnizBJXdczRP9Ho3jQENmfVUeZrxudKNFWEjb3tSwAaUW5V1A4","explorer":"https://explorer.solana.com/tx/2EuATaYvZNcA8eEaYTSfrcWC66Fc9amV59urgrnizBJXdczRP9Ho3jQENmfVUeZrxudKNFWEjb3tSwAaUW5V1A4?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T17:07:37.508Z"}
+{"event":"kyc_success","queueSig":"2EuATaYvZNcA8eEaYTSfrcWC66Fc9amV59urgrnizBJXdczRP9Ho3jQENmfVUeZrxudKNFWEjb3tSwAaUW5V1A4","finalizeSig":"FKqjtdGgESJjJr9zDS7pMrXCxU53sKq6fPkZga4Yk4Beu2w9ukmwVrfUoqK3btnpGaiD7gd9N2P53jKe4YPtAbJ","clusterOffset":456,"ts":"2026-04-01T17:08:11.779Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T17:15:23.512Z"}
+{"event":"balance","sol":1.153834947,"ts":"2026-04-01T17:15:24.110Z"}
+{"event":"error","msg":"Signature 2xXdR5vjXfvGBacVgg7Yenm6RZCgamUe6n5xYkfXnJAiRe5xr2tWjxQ4xZhCjW4EmvX7BqbHk4NrbdtJp5axQAon has expired: block height exceeded.","ts":"2026-04-01T17:16:10.486Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T17:46:11.934Z"}
+{"event":"balance","sol":1.14051815,"ts":"2026-04-01T17:46:12.527Z"}
+{"event":"error","msg":"Signature 2TNLuSMx27ZV38SUse54DtiY9roFpZ27ondcirtDzSobga45a8nVci4BF27NUJihMLf6BeY41rd616xz2RPT4zMf has expired: block height exceeded.","ts":"2026-04-01T17:46:58.970Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T18:09:08.207Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (32, 1)","ts":"2026-04-01T18:09:08.830Z"}
+{"event":"kyc_queued","sig":"3sHrzHcEASkk9PFXjxnxocCtWZw2toV6zqwKMuvGZNEqVYxhkFJKA3y8rksTsH5PwzUaHL8VhX3Vb2WxY4padeGR","explorer":"https://explorer.solana.com/tx/3sHrzHcEASkk9PFXjxnxocCtWZw2toV6zqwKMuvGZNEqVYxhkFJKA3y8rksTsH5PwzUaHL8VhX3Vb2WxY4padeGR?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T18:09:12.464Z"}
+{"event":"kyc_success","queueSig":"3sHrzHcEASkk9PFXjxnxocCtWZw2toV6zqwKMuvGZNEqVYxhkFJKA3y8rksTsH5PwzUaHL8VhX3Vb2WxY4padeGR","finalizeSig":"KnxPu5q6EkkzhhtbTUs9LHaickWxRRmCXjj5DDot3WaW5CQAGPhQPd7zzi4RdjUMk4BaEGv4BJRKiSm2UY1aL86","clusterOffset":456,"ts":"2026-04-01T18:09:45.742Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T18:17:00.323Z"}
+{"event":"balance","sol":1.136092007,"ts":"2026-04-01T18:17:00.903Z"}
+{"event":"error","msg":"Signature GkNLhgiMwd18oLRiMRAtDE3pEXBQYNkk7Hu9Uvfae4AbJu3nV99ibiVN7jxYoJJazuNXexrUQVsi2z5bHymbmu6 has expired: block height exceeded.","ts":"2026-04-01T18:17:47.453Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T18:47:48.731Z"}
+{"event":"balance","sol":1.122831438,"ts":"2026-04-01T18:47:49.262Z"}
+{"event":"error","msg":"Signature 65nqEdb75xCEFMAJh1budvy1LHqpkdyeLY2mCPbSVVajd94yEHJ4KSS6uvHgUnENwU2hdodvcMQgZwDd1hEokopo has expired: block height exceeded.","ts":"2026-04-01T18:48:36.761Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T19:10:43.313Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (57, 0)","ts":"2026-04-01T19:10:43.843Z"}
+{"event":"kyc_queued","sig":"4L974tGwf5gQhteQ3XbC8pgZ4TZsNa8Cej7Wr8T5GGtFScg7x6ziTTSMg7jFf46qMbgVZidsS9qKRBmmEbPi4jFh","explorer":"https://explorer.solana.com/tx/4L974tGwf5gQhteQ3XbC8pgZ4TZsNa8Cej7Wr8T5GGtFScg7x6ziTTSMg7jFf46qMbgVZidsS9qKRBmmEbPi4jFh?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T19:10:45.047Z"}
+{"event":"kyc_success","queueSig":"4L974tGwf5gQhteQ3XbC8pgZ4TZsNa8Cej7Wr8T5GGtFScg7x6ziTTSMg7jFf46qMbgVZidsS9qKRBmmEbPi4jFh","finalizeSig":"3pkgZMN8qZxwyee3ueGFSW3YZTVQNRU8mca6ob3WtfAAdVvs61gS8Ah48HAqyWkeFVnphwNd6ai3gQLRWSZ397qv","clusterOffset":456,"ts":"2026-04-01T19:11:19.702Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T19:18:38.158Z"}
+{"event":"balance","sol":1.118358133,"ts":"2026-04-01T19:18:38.743Z"}
+{"event":"error","msg":"Signature Cuft6m6DVetj8EuRFmJmaU2JwauspiiQggzmaoU6HuSDrW3P1xNUPEMXaqnqugqXQuECCkkhS4zwLKSEoKGjsZ5 has expired: block height exceeded.","ts":"2026-04-01T19:19:25.082Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T19:49:26.466Z"}
+{"event":"balance","sol":1.105089702,"ts":"2026-04-01T19:49:26.982Z"}
+{"event":"error","msg":"Signature 5N7HVDHBfPogL5dmAXkDPJUarFomV6hrSfrWJpB7Pw2qGWvXj4UvehHQ9X2cHNzfDJsqPq4G8AiuLNWEMDrUb3me has expired: block height exceeded.","ts":"2026-04-01T19:50:14.096Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T20:12:15.790Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (38, 0)","ts":"2026-04-01T20:12:16.346Z"}
+{"event":"kyc_queued","sig":"D42wdphzmopWNtLmVf41eb2fX6UVov5VF99m47cFjesJaRoRyVPfKrRnrNuWZrM1ZKEuLMMMA3PdhZN2hvwnGJC","explorer":"https://explorer.solana.com/tx/D42wdphzmopWNtLmVf41eb2fX6UVov5VF99m47cFjesJaRoRyVPfKrRnrNuWZrM1ZKEuLMMMA3PdhZN2hvwnGJC?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T20:12:19.409Z"}
+{"event":"kyc_success","queueSig":"D42wdphzmopWNtLmVf41eb2fX6UVov5VF99m47cFjesJaRoRyVPfKrRnrNuWZrM1ZKEuLMMMA3PdhZN2hvwnGJC","finalizeSig":"Fazx6CQv1YXn91Su6ppHNULve2EU2afCKDow1FDFiRfmxQG3NzB5BcTakgaAvHJr8czRcHdH3SgzjLE1S9RL6Rr","clusterOffset":456,"ts":"2026-04-01T20:12:52.664Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T20:20:15.563Z"}
+{"event":"balance","sol":1.100668384,"ts":"2026-04-01T20:20:16.102Z"}
+{"event":"error","msg":"Signature 4XxL1am9p1pMfWbWp5ZjLMaUmWpKqaiYYAnGCWs81axMrQ9mQuU1gvd9ew8bYMAiqEybynfYp3GZ48edWgvjsk1k has expired: block height exceeded.","ts":"2026-04-01T20:21:02.488Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T20:51:03.777Z"}
+{"event":"balance","sol":1.091773236,"ts":"2026-04-01T20:51:04.359Z"}
+{"event":"error","msg":"Signature 2nphytPkeYYaTKb2ZccQDwDNTyA7A1enn3vkGpQ2R7H6a7zkeuidpWBaDKr1tKTxbNiETDnkPoq97oBNLwKMt886 has expired: block height exceeded.","ts":"2026-04-01T20:51:50.760Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T21:13:50.090Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (47, 0)","ts":"2026-04-01T21:13:50.672Z"}
+{"event":"kyc_queued","sig":"kQcgfKuvk9F3RoBMgL8WXzE3SsMdGrYVGtLHBmNuvmRJYR25MtSfTSJkVKGrVg4LWCjBisKcGX7ZkuMX5HbeQ9U","explorer":"https://explorer.solana.com/tx/kQcgfKuvk9F3RoBMgL8WXzE3SsMdGrYVGtLHBmNuvmRJYR25MtSfTSJkVKGrVg4LWCjBisKcGX7ZkuMX5HbeQ9U?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T21:13:53.737Z"}
+{"event":"kyc_success","queueSig":"kQcgfKuvk9F3RoBMgL8WXzE3SsMdGrYVGtLHBmNuvmRJYR25MtSfTSJkVKGrVg4LWCjBisKcGX7ZkuMX5HbeQ9U","finalizeSig":"2gq6VVZkdLTmq1vLVpX9ZEXwCbh9ZmtbbB2vViAaca61fEdsmQXYRk6HhJRti8LjmLo6V75pUybNXoS5dJposaJz","clusterOffset":456,"ts":"2026-04-01T21:14:26.456Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T21:21:52.192Z"}
+{"event":"balance","sol":1.082925949,"ts":"2026-04-01T21:21:52.813Z"}
+{"event":"error","msg":"Signature 34y7e1KrmVZu49qPTva1LsxS9NeCM91Zq6T5BPESBEV64ySWrQHivegEszq7Gwc9Fzq9C4susBgFNkJLQ9ube5RY has expired: block height exceeded.","ts":"2026-04-01T21:22:38.413Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T21:52:39.639Z"}
+{"event":"balance","sol":1.074088208,"ts":"2026-04-01T21:52:40.208Z"}
+{"event":"error","msg":"Signature PLBTyxgHHdbr97Q5k6sxhwRRKjcY1LkZEgHzxD9HeGPyKZarFeV1A6dxMQD9bJHHp26YjLsUco2j8CFcFXGv29Q has expired: block height exceeded.","ts":"2026-04-01T21:53:25.261Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T22:15:24.578Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (18, 0)","ts":"2026-04-01T22:15:25.207Z"}
+{"event":"kyc_queued","sig":"2ZPE6YhGZGcCzwPDUKBUFyh4b4aKRPhhKvkWg9UQugpANReiVJtcNR7ndL7gZYTyDcmYR7i58cp2XyMQ8vsovQab","explorer":"https://explorer.solana.com/tx/2ZPE6YhGZGcCzwPDUKBUFyh4b4aKRPhhKvkWg9UQugpANReiVJtcNR7ndL7gZYTyDcmYR7i58cp2XyMQ8vsovQab?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T22:15:28.319Z"}
+{"event":"kyc_success","queueSig":"2ZPE6YhGZGcCzwPDUKBUFyh4b4aKRPhhKvkWg9UQugpANReiVJtcNR7ndL7gZYTyDcmYR7i58cp2XyMQ8vsovQab","finalizeSig":"52qGbYfx9KDMn39dTJUzhYSDvUHrnDe8nLxcygwGVzhgjQmynx8ZYgqGqKc6MRJFe3qDKrRaa3nPR1PKuJg6v9We","clusterOffset":456,"ts":"2026-04-01T22:16:01.838Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T22:23:26.527Z"}
+{"event":"balance","sol":1.060772827,"ts":"2026-04-01T22:23:27.142Z"}
+{"event":"error","msg":"Signature 54pbcbGbSU5TYWDHHcPGq8A4jvJEhLhpjfn8s1gb7XAkLKJ8A9SLL7ETUzNtPWKgnz7JPr9ATRn1PyJYqAiDty3S has expired: block height exceeded.","ts":"2026-04-01T22:24:12.783Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T22:54:14.181Z"}
+{"event":"balance","sol":1.056346684,"ts":"2026-04-01T22:54:14.754Z"}
+{"event":"error","msg":"Signature 3GGfEGMCeDc1r8wdpMuSB6wZnpEn6HGEFn9t9qpr9sDXeV2M72wfURCCys8tWnZsUMdY4rBTpRPMHMZ2Yqqpr6rg has expired: block height exceeded.","ts":"2026-04-01T22:54:59.851Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-01T23:16:59.148Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (44, 1)","ts":"2026-04-01T23:16:59.758Z"}
+{"event":"kyc_queued","sig":"2atbj59StfnRaCN12yWfes6sQAbEU22uxYLqqrH33rCsetnv1niFYCttiXfqBqyapPBJBT2tDMr5weL3xHNGSCqg","explorer":"https://explorer.solana.com/tx/2atbj59StfnRaCN12yWfes6sQAbEU22uxYLqqrH33rCsetnv1niFYCttiXfqBqyapPBJBT2tDMr5weL3xHNGSCqg?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-01T23:17:02.833Z"}
+{"event":"kyc_success","queueSig":"2atbj59StfnRaCN12yWfes6sQAbEU22uxYLqqrH33rCsetnv1niFYCttiXfqBqyapPBJBT2tDMr5weL3xHNGSCqg","finalizeSig":"x3HneREKFr8hCWZST2rMeaDKrs9TD9yD3jJkFaj6JyCgwv74BYfQJUKa7DxUG44U6oC1x5VmzCuiwLqLTypCsne","clusterOffset":456,"ts":"2026-04-01T23:17:34.848Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T23:25:01.140Z"}
+{"event":"balance","sol":1.043085734,"ts":"2026-04-01T23:25:01.722Z"}
+{"event":"error","msg":"Signature 3BM56CkVWVvBT9TqPjLC9pq87tPuxkHsMiytFEHAepuNDxWwe4N7BGcHG5QqjhejQRs3FeoQUcFkbHk3zWAo2XLX has expired: block height exceeded.","ts":"2026-04-01T23:25:48.155Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-01T23:55:49.440Z"}
+{"event":"balance","sol":1.038613972,"ts":"2026-04-01T23:55:50.012Z"}
+{"event":"error","msg":"Signature 5M3f9hxLrA92jLTMc9drdYM1Fhoj3g96vZtQTfRNzzEKQeNKydNfyMMGQKquDitPBqTjQuzQXWMcMcuxhuePxUcw has expired: block height exceeded.","ts":"2026-04-01T23:56:35.056Z"}
