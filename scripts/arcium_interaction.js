@@ -1,7 +1,7 @@
 try { require('dotenv').config(); } catch (_) {}
 const {
   Connection, PublicKey, Keypair, Transaction, SystemProgram,
-  sendAndConfirmTransaction, LAMPORTS_PER_SOL,
+  LAMPORTS_PER_SOL,
 } = require('@solana/web3.js');
 const fs = require('fs');
 const path = require('path');
@@ -13,6 +13,43 @@ function log(entry) {
   const line = JSON.stringify({ ...entry, ts: new Date().toISOString() });
   fs.appendFileSync(LOG, line + '\n');
   console.log(line);
+}
+
+async function sleep(ms) {
+  await new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function sendAndConfirmWithPolling(conn, tx, signer) {
+  const latest = await conn.getLatestBlockhash('confirmed');
+  tx.feePayer = signer.publicKey;
+  tx.recentBlockhash = latest.blockhash;
+  tx.sign(signer);
+
+  const sig = await conn.sendRawTransaction(tx.serialize(), {
+    skipPreflight: false,
+    preflightCommitment: 'confirmed',
+    maxRetries: 3,
+  });
+
+  for (let attempt = 0; attempt < 40; attempt += 1) {
+    const statusResp = await conn.getSignatureStatuses([sig], {
+      searchTransactionHistory: true,
+    });
+    const status = statusResp.value[0];
+    if (status && status.err) {
+      throw new Error(`Transaction ${sig} failed: ${JSON.stringify(status.err)}`);
+    }
+    if (status && (status.confirmationStatus === 'confirmed' || status.confirmationStatus === 'finalized')) {
+      return sig;
+    }
+    const currentHeight = await conn.getBlockHeight('confirmed');
+    if (currentHeight > latest.lastValidBlockHeight) {
+      throw new Error(`Signature ${sig} has expired: block height exceeded.`);
+    }
+    await sleep(1500);
+  }
+
+  throw new Error(`Timed out waiting for confirmation for ${sig}`);
 }
 
 async function run() {
@@ -31,12 +68,12 @@ async function run() {
     return;
   }
 
-  const sig = await sendAndConfirmTransaction(conn,
+  const sig = await sendAndConfirmWithPolling(conn,
     new Transaction().add(SystemProgram.transfer({
       fromPubkey: kp.publicKey,
       toPubkey: kp.publicKey,
       lamports: 1000,
-    })), [kp]);
+    })), kp);
   log({ event: 'tx_sent', sig, cluster: 'devnet' });
 
   const pid = new PublicKey(process.env.ARCIUM_PROGRAM_ID || 'Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h');
