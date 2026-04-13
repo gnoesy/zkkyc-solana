@@ -3303,3 +3303,287 @@
 {"event":"balance","sol":21.826493186,"ts":"2026-04-11T23:47:28.373Z"}
 {"event":"tx_sent","sig":"2g4LUSXGuDmExZPGDoHCfd8TGcnaQSo1ZGY3k3GUBif97wrK6p57TM66ECbt8EDpZ3ZfjBV4Xw1v9nsC715R3ZF6","cluster":"devnet","ts":"2026-04-11T23:47:31.570Z"}
 {"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-11T23:47:31.911Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T00:17:32.263Z"}
+{"event":"balance","sol":21.822067041,"ts":"2026-04-12T00:17:32.921Z"}
+{"event":"tx_sent","sig":"3anmFaDHUNy3xsWz88zQ6kgJfizKTm7QiCNgYuirJRWaF6kUQCKFmQrxjXxQmanxT84t3q4xMhzrxmJPv9eCKZ2j","cluster":"devnet","ts":"2026-04-12T00:17:36.085Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T00:17:36.429Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T00:34:46.092Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (27, 1)","ts":"2026-04-12T00:34:46.733Z"}
+{"event":"kyc_queued","sig":"66GLjmxtRqufa763HQKnvUcBabkpc2u5f5hcKwNs8Z4JTLWngTZpDYB86Wj3yMiqcgU3FLHaq7DW3EaHSDJVqWM7","explorer":"https://explorer.solana.com/tx/66GLjmxtRqufa763HQKnvUcBabkpc2u5f5hcKwNs8Z4JTLWngTZpDYB86Wj3yMiqcgU3FLHaq7DW3EaHSDJVqWM7?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T00:34:50.884Z"}
+{"event":"kyc_success","queueSig":"66GLjmxtRqufa763HQKnvUcBabkpc2u5f5hcKwNs8Z4JTLWngTZpDYB86Wj3yMiqcgU3FLHaq7DW3EaHSDJVqWM7","finalizeSig":"2weUeH65JquEHtEZ8HKWP4wrCYEt23px55cPkRp2BuE47MjHvczn2ju1UX6STiNwPxDPWrNaN6Qs5hGSqCgQMj2u","clusterOffset":456,"ts":"2026-04-12T00:35:11.541Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T00:47:36.636Z"}
+{"event":"balance","sol":21.808803574,"ts":"2026-04-12T00:47:37.220Z"}
+{"event":"tx_sent","sig":"28oDQZ88RhoVAs9eyaFhJkJZRkeJ4FfNZmCrCboXsY7nP4Vx5MnqgVAqq2UavQJTgSyJRJRmvaQTiNQUJwmcdjX4","cluster":"devnet","ts":"2026-04-12T00:47:40.448Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T00:47:40.789Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T01:17:41.177Z"}
+{"event":"balance","sol":21.804358448,"ts":"2026-04-12T01:17:41.708Z"}
+{"event":"tx_sent","sig":"4MNRawiD3tHNo6m6eCWCcSRtiytXKVs4ZV8kDVdunnr4Bvwh5dqgY2SjQBxxyFA9mXzkn5CVR4QVpTPtGseRbsvD","cluster":"devnet","ts":"2026-04-12T01:17:44.882Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T01:17:45.216Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T01:36:21.842Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (31, 0)","ts":"2026-04-12T01:36:22.403Z"}
+{"event":"kyc_queued","sig":"3bzLi33LZegu8F9epbzGVCedFtviBgnr2gkjeUpBDPSL8U7Zhw5K723ky4Utsg9svNuVmiQtRQGRwGiRGXtPmzgA","explorer":"https://explorer.solana.com/tx/3bzLi33LZegu8F9epbzGVCedFtviBgnr2gkjeUpBDPSL8U7Zhw5K723ky4Utsg9svNuVmiQtRQGRwGiRGXtPmzgA?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T01:36:26.085Z"}
+{"event":"kyc_success","queueSig":"3bzLi33LZegu8F9epbzGVCedFtviBgnr2gkjeUpBDPSL8U7Zhw5K723ky4Utsg9svNuVmiQtRQGRwGiRGXtPmzgA","finalizeSig":"5DkRrHDbQVVLpDNbPBmSCBHDVpfgyXydxNxWBcW7pBrVpZv6KCrVAXucfJahTjLBquLgqUiYcwohbC2CxrVe4AD7","clusterOffset":456,"ts":"2026-04-12T01:36:45.862Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T01:47:45.538Z"}
+{"event":"balance","sol":21.791066086,"ts":"2026-04-12T01:47:46.107Z"}
+{"event":"tx_sent","sig":"6J6fkjYweLxHwD467EhExiHNfVcGGLSXz4MHAgZnPJdQ5EMhrEGBnb8rQUy1ZnjwwwjfuyEyiJJ6WiNW84V7QqY","cluster":"devnet","ts":"2026-04-12T01:47:49.299Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T01:47:49.626Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T02:17:49.937Z"}
+{"event":"balance","sol":21.786639941,"ts":"2026-04-12T02:17:50.523Z"}
+{"event":"tx_sent","sig":"rni9xkrXYxMrhXSx6ehDd4sz2YVFjLwJQFiTaKoR6bwHjVNidF3ZrsBFEXKeRyXdXxy1WoUT2mqJ2DNtpv4hmgm","cluster":"devnet","ts":"2026-04-12T02:17:54.292Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T02:17:54.702Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T02:37:56.776Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (62, 0)","ts":"2026-04-12T02:37:57.352Z"}
+{"event":"kyc_queued","sig":"2cj42Yu58bV6XRS4G3CSkuHan6bcb2Y9qXo5ZF79DND6sEmQGxtBQSqr11GSXXVV8GXsPgkqhgw3Pk4cZLFGsK2D","explorer":"https://explorer.solana.com/tx/2cj42Yu58bV6XRS4G3CSkuHan6bcb2Y9qXo5ZF79DND6sEmQGxtBQSqr11GSXXVV8GXsPgkqhgw3Pk4cZLFGsK2D?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T02:38:00.486Z"}
+{"event":"kyc_success","queueSig":"2cj42Yu58bV6XRS4G3CSkuHan6bcb2Y9qXo5ZF79DND6sEmQGxtBQSqr11GSXXVV8GXsPgkqhgw3Pk4cZLFGsK2D","finalizeSig":"2eh8FsNvorPoJsLqfNbDfdvVr2nLBvF2eDubFfD7aGZnuJyQMQoATSM8p3Kr5VNeCrY9gW2k51BoLEEPg5p1rUy2","clusterOffset":456,"ts":"2026-04-12T02:38:20.927Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T02:47:55.043Z"}
+{"event":"balance","sol":21.777794865,"ts":"2026-04-12T02:47:55.622Z"}
+{"event":"tx_sent","sig":"4v24SKbVmDfHZ8EE6msdds5NrvaWaQ44N2YSS5ovhQpAjFjudrNrTWnn97VPQDNmUg3YsMjvRc1rEaHfLiNSMKgZ","cluster":"devnet","ts":"2026-04-12T02:47:58.953Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T02:47:59.306Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T03:17:59.561Z"}
+{"event":"balance","sol":21.768925862,"ts":"2026-04-12T03:18:00.115Z"}
+{"event":"tx_sent","sig":"4atagqdfR5Vq8ACPMWgq5QaoJYM6BSzqb6uFtyzTnSt9KnN16gSqwuVSRzjCcKg1Jh1kuLw7xwN5d8sbNCmjpqCJ","cluster":"devnet","ts":"2026-04-12T03:18:03.314Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T03:18:03.635Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T03:39:31.210Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (45, 0)","ts":"2026-04-12T03:39:31.810Z"}
+{"event":"kyc_queued","sig":"3gYQLThSJUNrhdCcNx3fpW7ja9Qcmfgpriov968VWYmC2XLN4uo3esLx4Ek3ex8AknW7G9UQBW4XdhYaD6qmqZY8","explorer":"https://explorer.solana.com/tx/3gYQLThSJUNrhdCcNx3fpW7ja9Qcmfgpriov968VWYmC2XLN4uo3esLx4Ek3ex8AknW7G9UQBW4XdhYaD6qmqZY8?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T03:39:34.913Z"}
+{"event":"kyc_success","queueSig":"3gYQLThSJUNrhdCcNx3fpW7ja9Qcmfgpriov968VWYmC2XLN4uo3esLx4Ek3ex8AknW7G9UQBW4XdhYaD6qmqZY8","finalizeSig":"fBZGkX9UcdQ1Lhic2aFxQWrWVs84A66N2b5cnaN87LSwa5DbgH7UxQJ8r1gaY94TdxiairMFxg5s63inQiHvWtw","clusterOffset":456,"ts":"2026-04-12T03:39:54.578Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T03:48:03.942Z"}
+{"event":"balance","sol":21.76005378,"ts":"2026-04-12T03:48:04.488Z"}
+{"event":"tx_sent","sig":"3X2JLuBjiQwysDkyzEPCGNmC7op1RtfbGzj8vKWmhbDHdNL3oSAydnUkRUhdkjaVKAH5za1fVinaznwpop6F7Y9r","cluster":"devnet","ts":"2026-04-12T03:48:07.607Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T03:48:07.936Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T04:18:08.360Z"}
+{"event":"balance","sol":21.75120649,"ts":"2026-04-12T04:18:08.945Z"}
+{"event":"tx_sent","sig":"22rudczKWGUPU8EE1TJyApBYH7KW4VWBZgJkUhL3kwnYLp8UaSZfueUAr54iciCrqnVVKL2UcRAJLQKKvVrSgdrJ","cluster":"devnet","ts":"2026-04-12T04:18:13.678Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T04:18:14.032Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T04:41:05.616Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (57, 0)","ts":"2026-04-12T04:41:06.171Z"}
+{"event":"kyc_queued","sig":"4QqJQLjK3qMCWmoDtGboQHc4GDLXKbvNg6WfzmPfrtyPdTaGcuzKNa1mAsaPZZFh7dJCHKPs9inzXUxnA9DXYJXZ","explorer":"https://explorer.solana.com/tx/4QqJQLjK3qMCWmoDtGboQHc4GDLXKbvNg6WfzmPfrtyPdTaGcuzKNa1mAsaPZZFh7dJCHKPs9inzXUxnA9DXYJXZ?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T04:41:11.538Z"}
+{"event":"kyc_success","queueSig":"4QqJQLjK3qMCWmoDtGboQHc4GDLXKbvNg6WfzmPfrtyPdTaGcuzKNa1mAsaPZZFh7dJCHKPs9inzXUxnA9DXYJXZ","finalizeSig":"2P6cp4vwuQVUyqvi3gsnHQ8t4L1XFppR4QDEy6KfzqD2JBXxcfC8rS1z2qPjGaUPw7hjhkjo6cEaCiNS9ivqjdca","clusterOffset":456,"ts":"2026-04-12T04:41:31.369Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T04:48:14.366Z"}
+{"event":"balance","sol":21.742363293,"ts":"2026-04-12T04:48:14.946Z"}
+{"event":"tx_sent","sig":"3aG9xRh8qN27QvGye4cpbc4XTMfA2KPJ1HD6xaF5i2tuZtedHGsbNVAt2kZWdWdVj1GKbo56ThdoLwdkQ6qfp4hK","cluster":"devnet","ts":"2026-04-12T04:48:18.556Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T04:48:18.940Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T05:18:17.198Z"}
+{"event":"balance","sol":21.733496898,"ts":"2026-04-12T05:18:17.741Z"}
+{"event":"tx_sent","sig":"4aQimxqP1P2fZSHZSmw61aHumMzmqxxqrPgfmTy8zNkZVwn8rt2m6FYVtsmUJ93eTh3tyZdAu8Sm3fyvbXoytZ8v","cluster":"devnet","ts":"2026-04-12T05:18:19.722Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T05:18:20.086Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T05:42:40.337Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (23, 0)","ts":"2026-04-12T05:42:40.874Z"}
+{"event":"kyc_queued","sig":"5feNYXRBcqqsmMPtojpEHrUf5mzXVTseitpyRD1UsCV37jT6GN4MVFwoBSyKHjcPDe38Kqa2uWrK8564vx1BNexx","explorer":"https://explorer.solana.com/tx/5feNYXRBcqqsmMPtojpEHrUf5mzXVTseitpyRD1UsCV37jT6GN4MVFwoBSyKHjcPDe38Kqa2uWrK8564vx1BNexx?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T05:42:44.182Z"}
+{"event":"kyc_success","queueSig":"5feNYXRBcqqsmMPtojpEHrUf5mzXVTseitpyRD1UsCV37jT6GN4MVFwoBSyKHjcPDe38Kqa2uWrK8564vx1BNexx","finalizeSig":"4bigR9e6nmXj9kJjK1DNCbfrN7f6idPMhFBZpj4kp4pxpqtshQe6WHUWwM78AQF6R647NGywQBpskhu4yE3pxekC","clusterOffset":456,"ts":"2026-04-12T05:43:06.346Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T05:48:22.376Z"}
+{"event":"balance","sol":21.724625732,"ts":"2026-04-12T05:48:23.019Z"}
+{"event":"tx_sent","sig":"5gPsMgXy8MsgZMf8vVaALJqdzG5eftE4Ko4CBkXchbNQkuqptAzB2nhwmawzRjMcQpVwNYq9WuqXkCSGt3GdnMxV","cluster":"devnet","ts":"2026-04-12T05:48:26.241Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T05:48:26.561Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T06:18:26.909Z"}
+{"event":"balance","sol":21.715778442,"ts":"2026-04-12T06:18:27.447Z"}
+{"event":"tx_sent","sig":"2jTFuFVFncw6TzcYS2M8rgphjdhvPuqViJEiS3P73uuev8xYUbo6Jk7MFxZr9aqYkQw819ALUGLf4v8ibgPR3ZQ6","cluster":"devnet","ts":"2026-04-12T06:18:31.041Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T06:18:31.375Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T06:44:17.153Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (29, 0)","ts":"2026-04-12T06:44:17.762Z"}
+{"event":"kyc_queued","sig":"2qJFeg9ZnBBn8HTgiAQ3vWHvDdkeyeUNJb2ZmuV5gawQnEvXYNQYZw54FQf1npVj4QUnQzfgKhgvJTowiZCPc6YN","explorer":"https://explorer.solana.com/tx/2qJFeg9ZnBBn8HTgiAQ3vWHvDdkeyeUNJb2ZmuV5gawQnEvXYNQYZw54FQf1npVj4QUnQzfgKhgvJTowiZCPc6YN?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T06:44:20.884Z"}
+{"event":"kyc_success","queueSig":"2qJFeg9ZnBBn8HTgiAQ3vWHvDdkeyeUNJb2ZmuV5gawQnEvXYNQYZw54FQf1npVj4QUnQzfgKhgvJTowiZCPc6YN","finalizeSig":"M5a6TwT9xGSYUFjbSrHXDxXicEgVgvD921DD7vJDpRjNd3iMqbmSfF23mkUSmy7SzMsSzmhcDgRzd2sRwhH9YDy","clusterOffset":456,"ts":"2026-04-12T06:44:40.938Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T06:48:31.630Z"}
+{"event":"balance","sol":21.706934576,"ts":"2026-04-12T06:48:32.219Z"}
+{"event":"tx_sent","sig":"3EYCijKezwA6ntAFRj2tjmdeKHeBGpYFK185zV7Gh2x6sLwMjtUxCjgiafDRvwqxgzdy4XhjWxYCGEkH2QhQP5Ux","cluster":"devnet","ts":"2026-04-12T06:48:33.682Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T06:48:34.018Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T07:18:34.353Z"}
+{"event":"balance","sol":21.698069225,"ts":"2026-04-12T07:18:34.880Z"}
+{"event":"tx_sent","sig":"3H2ujZF9YQBbgF8cnjEYCdz3rtFA9T4j5nMt9TidMn1BA7gZygAm6KcnRbiypS1XCNGwvWQpr6C2kQnkppoDHBV9","cluster":"devnet","ts":"2026-04-12T07:18:37.997Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T07:18:38.324Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T07:45:51.957Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (31, 0)","ts":"2026-04-12T07:45:52.636Z"}
+{"event":"kyc_queued","sig":"44ztXYxE6MDGxGfHfRDSRws87qy5cgbDcf8GcNYoL1mC6kRCGTHK6XCN59vzofxSdDPZmU2XHivx6DvQYh9HFiCS","explorer":"https://explorer.solana.com/tx/44ztXYxE6MDGxGfHfRDSRws87qy5cgbDcf8GcNYoL1mC6kRCGTHK6XCN59vzofxSdDPZmU2XHivx6DvQYh9HFiCS?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T07:45:55.801Z"}
+{"event":"kyc_success","queueSig":"44ztXYxE6MDGxGfHfRDSRws87qy5cgbDcf8GcNYoL1mC6kRCGTHK6XCN59vzofxSdDPZmU2XHivx6DvQYh9HFiCS","finalizeSig":"5cpFvX6eUJCfvcBLX5cdtm7qyUdv5JM6bP2j1QBPVbQjopAKshjWji1Fr4CEeTy8ZBgiC4FiTHQckViPVP2o1iB6","clusterOffset":456,"ts":"2026-04-12T07:46:17.050Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T07:48:38.641Z"}
+{"event":"balance","sol":21.689197967,"ts":"2026-04-12T07:48:39.182Z"}
+{"event":"tx_sent","sig":"31aSU7eYhPEjsuAjVfcvPVtxDXKsDfg2hGqhnF2SaEfBXqEEeZGpELkYwq7YqJaTbiB2sHCSP8BMLAVmufe359en","cluster":"devnet","ts":"2026-04-12T07:48:42.372Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T07:48:42.693Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T08:18:42.920Z"}
+{"event":"balance","sol":21.680350677,"ts":"2026-04-12T08:18:43.517Z"}
+{"event":"tx_sent","sig":"3YhbMAMoadS55Kf5XsBJQufNPb2M276YRz2pRRKhuXvzHJLz822B3q2GBrK8ZtGrouecp1hTs8eqWNzJnhEg8SiK","cluster":"devnet","ts":"2026-04-12T08:18:46.808Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T08:18:47.158Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T08:47:26.747Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (35, 0)","ts":"2026-04-12T08:47:27.357Z"}
+{"event":"kyc_queued","sig":"2CMsKxaa9VMXRx1szwr5HeyPWPn2amSU5cqaBYr7CjbU1oQ4rAxxmdwPEXcfbWmFLfoEMqkTTLDYXZR6oYrC2HRc","explorer":"https://explorer.solana.com/tx/2CMsKxaa9VMXRx1szwr5HeyPWPn2amSU5cqaBYr7CjbU1oQ4rAxxmdwPEXcfbWmFLfoEMqkTTLDYXZR6oYrC2HRc?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T08:47:30.474Z"}
+{"event":"kyc_success","queueSig":"2CMsKxaa9VMXRx1szwr5HeyPWPn2amSU5cqaBYr7CjbU1oQ4rAxxmdwPEXcfbWmFLfoEMqkTTLDYXZR6oYrC2HRc","finalizeSig":"4ncNkeE5WVti2b8ZLvd3s3NG27D6Kq8mSAmvtasL3W8Rgr4qE1YftLhxCzcaQMuwgLPNStivb96WBP59FUJWiyMA","clusterOffset":456,"ts":"2026-04-12T08:47:51.827Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T08:48:47.350Z"}
+{"event":"balance","sol":21.671506088,"ts":"2026-04-12T08:48:47.893Z"}
+{"event":"tx_sent","sig":"5d62m5g2kprPgTguVvEWsHNQfPWQDi9bCjWZMGCT13rkoingrk2yLwacrji6MW9RZVoEboZE3dmtbXSZq9RZae8N","cluster":"devnet","ts":"2026-04-12T08:48:50.974Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T08:48:51.282Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T09:18:51.554Z"}
+{"event":"balance","sol":21.662638237,"ts":"2026-04-12T09:18:52.137Z"}
+{"event":"tx_sent","sig":"517ekcj21h5snEoBtqBmU57bPgs7MgWo6AYzbL9MVYp4x6EMVqU1a889m9iiznoLGQZbcUVpFk4SU3AxjjtUUuZj","cluster":"devnet","ts":"2026-04-12T09:18:55.321Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T09:18:55.665Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T09:48:56.071Z"}
+{"event":"balance","sol":21.653767671,"ts":"2026-04-12T09:48:56.618Z"}
+{"event":"tx_sent","sig":"37pbCq5XyAarQt6qxqZ1pt1oyxTGfEBLzRaxsucWqiPRdHNLFqpno9wjcQkyt4yzQi7bxS9E2Nxd54N5rohcB6Vy","cluster":"devnet","ts":"2026-04-12T09:48:59.748Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T09:49:00.085Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T09:49:01.489Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (25, 0)","ts":"2026-04-12T09:49:02.546Z"}
+{"event":"kyc_queued","sig":"4tEa9N7hLUqEryESfoPGP9MKSYVB7Zz3S81Bqa3uCxqRyRNxZTy9T8Qtw44DfRJuieRTeiibs4fTomP1zk2iPtTV","explorer":"https://explorer.solana.com/tx/4tEa9N7hLUqEryESfoPGP9MKSYVB7Zz3S81Bqa3uCxqRyRNxZTy9T8Qtw44DfRJuieRTeiibs4fTomP1zk2iPtTV?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T09:49:05.735Z"}
+{"event":"kyc_success","queueSig":"4tEa9N7hLUqEryESfoPGP9MKSYVB7Zz3S81Bqa3uCxqRyRNxZTy9T8Qtw44DfRJuieRTeiibs4fTomP1zk2iPtTV","finalizeSig":"3ndiFzB6bBKU4QD3tBMnccHm5uiKcS3n7wLoq6uHVNkvoYsBDrGCf36nfaeqRraZ37VE6Wai9ocrb5fs26jeK1XY","clusterOffset":456,"ts":"2026-04-12T09:49:27.634Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T10:19:00.362Z"}
+{"event":"balance","sol":21.644920381,"ts":"2026-04-12T10:19:00.957Z"}
+{"event":"tx_sent","sig":"zRZimUFXMjibJpLbj9VULeGzPS4N4K5s2zFBgGELroie1aKhFi6Uk1WDbFh4yLtTh7AminWFxpVtqCgHun4FAUj","cluster":"devnet","ts":"2026-04-12T10:19:04.191Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T10:19:04.599Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T10:49:04.916Z"}
+{"event":"balance","sol":21.636075339,"ts":"2026-04-12T10:49:05.521Z"}
+{"event":"tx_sent","sig":"42arGjyXJTEFJLyje7Reh68Dv9X97PZec7na7THftYUsohqpxVxu5nuhHUXtJLN5s2uKTwLDoifonmK2cvavXCYP","cluster":"devnet","ts":"2026-04-12T10:49:08.846Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T10:49:09.251Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T10:50:36.691Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (40, 0)","ts":"2026-04-12T10:50:37.239Z"}
+{"event":"kyc_queued","sig":"47GqkhGmXftdFBtoSiQiYheRcS7qKVnEVZCYUsmrrR1QJ6FPvMjCSVz7H4RB29b3JHiQ7Hafb4PH5fePUhU3GKtZ","explorer":"https://explorer.solana.com/tx/47GqkhGmXftdFBtoSiQiYheRcS7qKVnEVZCYUsmrrR1QJ6FPvMjCSVz7H4RB29b3JHiQ7Hafb4PH5fePUhU3GKtZ?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T10:50:40.234Z"}
+{"event":"kyc_success","queueSig":"47GqkhGmXftdFBtoSiQiYheRcS7qKVnEVZCYUsmrrR1QJ6FPvMjCSVz7H4RB29b3JHiQ7Hafb4PH5fePUhU3GKtZ","finalizeSig":"43Q3V1rG9cZoUKk9TJsCUAgysTwACtJ6rnjep42aH5rqsYRoi2hSAyQFMFPXZKjJuHs4K153PUfazEAwGp55qyp1","clusterOffset":456,"ts":"2026-04-12T10:51:00.156Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T11:19:09.634Z"}
+{"event":"balance","sol":21.627208763,"ts":"2026-04-12T11:19:10.182Z"}
+{"event":"tx_sent","sig":"5nKMy3TVfqerNRbPeC9eaY6Pq2EysqD5UZ1uMMz8nBbath6K2nHgfHcFnHFv4n3qtZdTs6aMsEJ4yo2Hx1h59wLg","cluster":"devnet","ts":"2026-04-12T11:19:13.457Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T11:19:14.288Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T11:49:14.664Z"}
+{"event":"balance","sol":21.618337569,"ts":"2026-04-12T11:49:15.703Z"}
+{"event":"tx_sent","sig":"4RUpLMnrzJ2BzKekbdytUTpmfKAG7H3V5dLxstTEMMqmJtuzhLUBBHqo8S4oHLYpxWLZ4SA5QXcQ1x9J4ZnsVkgC","cluster":"devnet","ts":"2026-04-12T11:49:19.299Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T11:49:19.623Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T11:52:11.281Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (60, 0)","ts":"2026-04-12T11:52:11.921Z"}
+{"event":"kyc_queued","sig":"4Ag1jMcjTj9tSzhqmEZWfMgq46T5Ag6RGd7xmKTpzu62YtQDXwjJa8ATPDHFSGD6XjGNwbi6Ebr1N3yTwpUwK9A8","explorer":"https://explorer.solana.com/tx/4Ag1jMcjTj9tSzhqmEZWfMgq46T5Ag6RGd7xmKTpzu62YtQDXwjJa8ATPDHFSGD6XjGNwbi6Ebr1N3yTwpUwK9A8?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T11:52:15.113Z"}
+{"event":"kyc_success","queueSig":"4Ag1jMcjTj9tSzhqmEZWfMgq46T5Ag6RGd7xmKTpzu62YtQDXwjJa8ATPDHFSGD6XjGNwbi6Ebr1N3yTwpUwK9A8","finalizeSig":"3JUrRWFEHJhVozStLFb9iRMa7jnj8MEVS1REJNAVyVGDndPt4ZVTmGPiPJtTikGi3sPiBfQgGh7pRoZo7hDK1v5C","clusterOffset":456,"ts":"2026-04-12T11:52:34.001Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T12:19:19.931Z"}
+{"event":"balance","sol":21.609490279,"ts":"2026-04-12T12:19:20.512Z"}
+{"event":"tx_sent","sig":"4d9qHnDgiDMterreLqwLQwy6WQ2QeRcg548Ncb2JPLxjMysfvFjj5jaZp8PzDxEYiZGuVPPP4YdciYCx23kCLPe1","cluster":"devnet","ts":"2026-04-12T12:19:23.833Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T12:19:24.216Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T12:49:24.493Z"}
+{"event":"balance","sol":21.60064733,"ts":"2026-04-12T12:49:25.097Z"}
+{"event":"tx_sent","sig":"YJ2uGEuXsyVx9akHfcr3c6WebSh23Nr45t2VAHRA7V5ReJTDkXcv4DDEPyJd5Nama4hB3ihBHKtJNWp18G6Yi9q","cluster":"devnet","ts":"2026-04-12T12:49:26.108Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T12:49:26.448Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T12:53:45.874Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (60, 1)","ts":"2026-04-12T12:53:46.473Z"}
+{"event":"kyc_queued","sig":"64Jx47boQNciafFn1BYkmxCBRgKGrMANe3gab8Biqa7cNobyActEkdbLHJhNtPWs8fxEACmkMguAEPEt7bZwPbJR","explorer":"https://explorer.solana.com/tx/64Jx47boQNciafFn1BYkmxCBRgKGrMANe3gab8Biqa7cNobyActEkdbLHJhNtPWs8fxEACmkMguAEPEt7bZwPbJR?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T12:53:49.715Z"}
+{"event":"kyc_success","queueSig":"64Jx47boQNciafFn1BYkmxCBRgKGrMANe3gab8Biqa7cNobyActEkdbLHJhNtPWs8fxEACmkMguAEPEt7bZwPbJR","finalizeSig":"3kVtrdXqxQ2PqykaMMU9Gymw4MwGxbLwDyBfijrebze2bMNhs3YyhoB2Qmbu8WngX7sHRJCKiNS3nSECrjt2TErM","clusterOffset":456,"ts":"2026-04-12T12:54:12.595Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T13:19:26.688Z"}
+{"event":"balance","sol":21.591781034,"ts":"2026-04-12T13:19:27.257Z"}
+{"event":"tx_sent","sig":"3UyckxX5cfTJF8KEZQ7YguJ95sXW5evNNaNGFjta6NEdPN4aStJf9EVip5hzUWFQWWsiihuxZjbTbg5vsW43hLXN","cluster":"devnet","ts":"2026-04-12T13:19:30.405Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T13:19:30.729Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T13:49:31.001Z"}
+{"event":"balance","sol":21.582908808,"ts":"2026-04-12T13:49:31.542Z"}
+{"event":"tx_sent","sig":"4DXPJkcF4kwTfi8yugZNxTZh2jBr9rGq6WkQMWMnCz1qwgEKimV23sroRCucbfqXBN3Jrw2155hgQvujDac238Gb","cluster":"devnet","ts":"2026-04-12T13:49:33.015Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T13:49:33.348Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T13:55:20.560Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (19, 0)","ts":"2026-04-12T13:55:21.197Z"}
+{"event":"kyc_queued","sig":"2vXzrPyPXH5tEeA8LFkmRB8aEJ4fqwLmwcjps9ECqYPcRhCqsMo3vVc22QQCTwNF91EYV6nnUABowKeyBCV2E3eA","explorer":"https://explorer.solana.com/tx/2vXzrPyPXH5tEeA8LFkmRB8aEJ4fqwLmwcjps9ECqYPcRhCqsMo3vVc22QQCTwNF91EYV6nnUABowKeyBCV2E3eA?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T13:55:26.998Z"}
+{"event":"kyc_success","queueSig":"2vXzrPyPXH5tEeA8LFkmRB8aEJ4fqwLmwcjps9ECqYPcRhCqsMo3vVc22QQCTwNF91EYV6nnUABowKeyBCV2E3eA","finalizeSig":"2q1VxdBCRt1YBeXZFCR3JVjufaez1Km9icp4GgqFpefhCNjq8EynNvKJq6EWt2t3PmcZ2VqEULDPMotgYW4uhCnc","clusterOffset":456,"ts":"2026-04-12T13:55:48.221Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T14:19:33.640Z"}
+{"event":"balance","sol":21.574061518,"ts":"2026-04-12T14:19:34.216Z"}
+{"event":"tx_sent","sig":"2SkiUBE6okbeCYhHvtaDUAm6stYidDHmLGs2L6A9NWCiNafLjmP2PfECmpJyf14Z5d5neTo3ok8RrZR6BowT91XY","cluster":"devnet","ts":"2026-04-12T14:19:37.401Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T14:19:37.733Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T14:49:38.063Z"}
+{"event":"balance","sol":21.565218424,"ts":"2026-04-12T14:49:38.700Z"}
+{"event":"tx_sent","sig":"2bWUTaBuPVYp8N84yhfaexxjKDB5tNvChtEdfiDzkzjCohYBSG5CUjkqeYv2aGrdeKaSk3HZGBvFTFRoU1hNLNUm","cluster":"devnet","ts":"2026-04-12T14:49:41.924Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T14:49:42.271Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T14:56:57.994Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (64, 0)","ts":"2026-04-12T14:56:58.528Z"}
+{"event":"kyc_queued","sig":"KPa9CL2f2Y8pbXeayokLhAxwtMGgqtHcLQhjPcXh5rVm6CCt4KeMTyJ4p1GRKANWM6K55BnXBRvcc5u3JzZUEmV","explorer":"https://explorer.solana.com/tx/KPa9CL2f2Y8pbXeayokLhAxwtMGgqtHcLQhjPcXh5rVm6CCt4KeMTyJ4p1GRKANWM6K55BnXBRvcc5u3JzZUEmV?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T14:57:01.602Z"}
+{"event":"kyc_success","queueSig":"KPa9CL2f2Y8pbXeayokLhAxwtMGgqtHcLQhjPcXh5rVm6CCt4KeMTyJ4p1GRKANWM6K55BnXBRvcc5u3JzZUEmV","finalizeSig":"qwRWH3UMACGPuDswiWU7BQKVKxfZsgoLQTyQV8YxZDoXyyWUTJxrQz4CQYeyDSPZDYNstYWytdjoLr6vrELB1nv","clusterOffset":456,"ts":"2026-04-12T14:57:22.732Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T15:19:42.582Z"}
+{"event":"balance","sol":21.556352007,"ts":"2026-04-12T15:19:43.170Z"}
+{"event":"tx_sent","sig":"4gjzJQsX46JdRC27ntFQKzQpHhthQUrduJKtkrMfUgSvmD5MKTAX7aoqW85Ejv7d8pPjpEcVaXj8Tq1r5dTknWzG","cluster":"devnet","ts":"2026-04-12T15:19:46.406Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T15:19:46.754Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T15:49:47.098Z"}
+{"event":"balance","sol":21.54748008,"ts":"2026-04-12T15:49:48.110Z"}
+{"event":"tx_sent","sig":"3tMr4QpAGkesLdHeopx47ZpvGr6Y5Nr6qQtEPiAK53nb75ZDwDPXSttZD4WajTiYvAkQr17jyLb5EARuFEntSgvR","cluster":"devnet","ts":"2026-04-12T15:49:52.196Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T15:49:52.999Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T15:58:32.609Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (24, 0)","ts":"2026-04-12T15:58:33.166Z"}
+{"event":"kyc_queued","sig":"35rLUfFhaLJwVFSGs6fY8SzQ53xJhcbVRxb6FmqRo39tdi4j7qZhAHPVHLcKHv3CwaU7uQKk3zh8gBFtUCoB9CaW","explorer":"https://explorer.solana.com/tx/35rLUfFhaLJwVFSGs6fY8SzQ53xJhcbVRxb6FmqRo39tdi4j7qZhAHPVHLcKHv3CwaU7uQKk3zh8gBFtUCoB9CaW?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T15:58:36.758Z"}
+{"event":"kyc_success","queueSig":"35rLUfFhaLJwVFSGs6fY8SzQ53xJhcbVRxb6FmqRo39tdi4j7qZhAHPVHLcKHv3CwaU7uQKk3zh8gBFtUCoB9CaW","finalizeSig":"3STAZi4ctjUAYk1QZk1i6sJ3dMvABGgQsAZzHKw8J7PJNXUcAP29ZjBUxapafaTK5FW1r38PHctaCbdhzsMFUG2U","clusterOffset":456,"ts":"2026-04-12T15:58:58.081Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T16:19:53.338Z"}
+{"event":"balance","sol":21.543053935,"ts":"2026-04-12T16:19:53.910Z"}
+{"event":"tx_sent","sig":"3wWxFkYjgsFc3W5erQ4xobUywwbwtW7Dv54tLmw9BgM6ZvGyzz1GTN9PgBGdiTHGuTtHoKn8HDqpqnEeWJNLgu7y","cluster":"devnet","ts":"2026-04-12T16:19:57.133Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T16:19:57.473Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T16:49:57.807Z"}
+{"event":"balance","sol":21.529790022,"ts":"2026-04-12T16:49:58.395Z"}
+{"event":"tx_sent","sig":"5wPtig1Trf5wJoaxotfthTWAJequKgCYCZjCm543C2YFxnvCe1ViSEKJk2oWqvLykr46ATbokLQWLAacHFG6Lcm2","cluster":"devnet","ts":"2026-04-12T16:50:01.569Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T16:50:02.418Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T17:00:07.555Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (51, 0)","ts":"2026-04-12T17:00:08.091Z"}
+{"event":"kyc_queued","sig":"5yics37ko5mR7sArdqGo1Ax4QZrmFicPVX6qogqJx6ogsfZ4WxNqAoHJTPjyPfMPs8bxbrn2smvVARxXwmQs23vN","explorer":"https://explorer.solana.com/tx/5yics37ko5mR7sArdqGo1Ax4QZrmFicPVX6qogqJx6ogsfZ4WxNqAoHJTPjyPfMPs8bxbrn2smvVARxXwmQs23vN?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T17:00:11.248Z"}
+{"event":"kyc_success","queueSig":"5yics37ko5mR7sArdqGo1Ax4QZrmFicPVX6qogqJx6ogsfZ4WxNqAoHJTPjyPfMPs8bxbrn2smvVARxXwmQs23vN","finalizeSig":"45EywSUdNgyyLiBrHQbHurvn2kWgWNhxT55YMpwJRMUjnNvSgwuCgLYzqpAJ8ynugqkMo3Sjv5DAJPDnP6Le1kjE","clusterOffset":456,"ts":"2026-04-12T17:00:32.485Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T17:20:02.617Z"}
+{"event":"balance","sol":21.525341671,"ts":"2026-04-12T17:20:03.235Z"}
+{"event":"tx_sent","sig":"4gZ7SHojGbhY6bfsYhe3N9iqZMq1bPNcFVuHX43joCxXN6NY98fSEbHxskb6WtpERmDXiJXeTx1WmBQmEmbR8K6C","cluster":"devnet","ts":"2026-04-12T17:20:06.555Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T17:20:06.918Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T17:50:07.274Z"}
+{"event":"balance","sol":21.512051116,"ts":"2026-04-12T17:50:07.870Z"}
+{"event":"tx_sent","sig":"2SzoFHH1wAfuy6TvHTkbDz9Kbg1CD6WJ5CKuKXnbvx1b1tbNsXVkaSxkf9vvJy8nriFsPhke9E3KMnaoekekded3","cluster":"devnet","ts":"2026-04-12T17:50:11.230Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T17:50:11.583Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T18:01:42.113Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (31, 0)","ts":"2026-04-12T18:01:42.662Z"}
+{"event":"kyc_queued","sig":"2jxZ8joR3jVHFqpqkvLCVvS9zdfAJT4wGgKh2Phx2iu3k4jJHwn8QzsctmSiAwD3nvd2D7ACFJ9bRj3JW5ehdZWv","explorer":"https://explorer.solana.com/tx/2jxZ8joR3jVHFqpqkvLCVvS9zdfAJT4wGgKh2Phx2iu3k4jJHwn8QzsctmSiAwD3nvd2D7ACFJ9bRj3JW5ehdZWv?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T18:01:45.789Z"}
+{"event":"kyc_success","queueSig":"2jxZ8joR3jVHFqpqkvLCVvS9zdfAJT4wGgKh2Phx2iu3k4jJHwn8QzsctmSiAwD3nvd2D7ACFJ9bRj3JW5ehdZWv","finalizeSig":"184HkuTtjB64nBuQavP9Pz6hkEtJTqm1zKt7dJBsq9TL6aA5EKvK4WwZGqm1hS3nYWLxRLmove16HpswEGxNhES","clusterOffset":456,"ts":"2026-04-12T18:02:07.168Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T18:20:11.853Z"}
+{"event":"balance","sol":21.507624971,"ts":"2026-04-12T18:20:12.360Z"}
+{"event":"tx_sent","sig":"2Ky5zjUBHVz8EDa8AtCaUumaWJs9hit93hru2MSjQELwSjXXL6qhJKKySetdBCYTEpse6zDFdcHPMThnKkhbMeDM","cluster":"devnet","ts":"2026-04-12T18:20:13.374Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T18:20:13.684Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T18:50:14.020Z"}
+{"event":"balance","sol":21.494359871,"ts":"2026-04-12T18:50:14.570Z"}
+{"event":"tx_sent","sig":"5H2QG2teVnb8PgdZwa8VWiQALWdzarnGL5o4U4siuGKPSGYqUPytrjhGgaBwTEQsXvUs7RL8puZo2nSvP5TXh8MX","cluster":"devnet","ts":"2026-04-12T18:50:17.726Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T18:50:18.071Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T19:03:16.602Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (31, 0)","ts":"2026-04-12T19:03:17.230Z"}
+{"event":"kyc_queued","sig":"eCdmoJsPuQEBK5CnuCnhyfM56TZPYf96Uf8s3dLgzdv7rCdHpC95DfYZbPYxb1yEFtsLdMASseA5UCYyfqUhK5i","explorer":"https://explorer.solana.com/tx/eCdmoJsPuQEBK5CnuCnhyfM56TZPYf96Uf8s3dLgzdv7rCdHpC95DfYZbPYxb1yEFtsLdMASseA5UCYyfqUhK5i?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T19:03:20.340Z"}
+{"event":"kyc_success","queueSig":"eCdmoJsPuQEBK5CnuCnhyfM56TZPYf96Uf8s3dLgzdv7rCdHpC95DfYZbPYxb1yEFtsLdMASseA5UCYyfqUhK5i","finalizeSig":"5sZWyxwNkKU39Me3z9g5LMvvYQ84a7AC7LTi35dCQLF2SDFQTdAPy7nCEQ5Vr7SNHyXvpKkt2dsoboa3osJGkJNY","clusterOffset":456,"ts":"2026-04-12T19:03:40.859Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T19:20:18.435Z"}
+{"event":"balance","sol":21.489913788,"ts":"2026-04-12T19:20:19.052Z"}
+{"event":"tx_sent","sig":"26RmmaAin49GzdRLU7Lr2upRMnhMRECdQqyBAxhx9f25PZhfPwYLWNzM6tPX3vNcDypFsAiDYP8G2HSWU5ti25VC","cluster":"devnet","ts":"2026-04-12T19:20:22.864Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T19:20:23.198Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T19:50:23.512Z"}
+{"event":"balance","sol":21.476623245,"ts":"2026-04-12T19:50:24.050Z"}
+{"event":"tx_sent","sig":"4FsPaDkSE5XsSBqvFkU8eacNWUHtyAyQbbEskQuwYc7ErDqKLWDY9hZ5Gyri2zrrCeqEcMS55PdeQX7AdwzNAHNj","cluster":"devnet","ts":"2026-04-12T19:50:27.182Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T19:50:27.501Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T20:04:51.282Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (64, 1)","ts":"2026-04-12T20:04:51.865Z"}
+{"event":"kyc_queued","sig":"5jfFLFayn8WwdgZ1PVtxokMkA5wG989NbfqB16CL8WqiNR9XY8ue3AqDBuK6Et7625W6cPrsPbTR9yw8zJjybuyx","explorer":"https://explorer.solana.com/tx/5jfFLFayn8WwdgZ1PVtxokMkA5wG989NbfqB16CL8WqiNR9XY8ue3AqDBuK6Et7625W6cPrsPbTR9yw8zJjybuyx?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T20:04:55.396Z"}
+{"event":"kyc_success","queueSig":"5jfFLFayn8WwdgZ1PVtxokMkA5wG989NbfqB16CL8WqiNR9XY8ue3AqDBuK6Et7625W6cPrsPbTR9yw8zJjybuyx","finalizeSig":"2sBdhX7vJjmEaK2Nm76dgHqzLs34taVjwBHEKojBqcgvXQXEvbxiCtjuuXsA3JegFZVhRPDTpA7ANkVmiR9SS4S2","clusterOffset":456,"ts":"2026-04-12T20:05:15.214Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T20:20:27.748Z"}
+{"event":"balance","sol":21.4721971,"ts":"2026-04-12T20:20:28.382Z"}
+{"event":"tx_sent","sig":"2uDpgGT7yCoJ192FqY45s9o25HjqATXrj6ZteT7Z2RtvtjhURGe36dpANP3UoPgziNptQVTrJsbBi7wAf8BsRNdK","cluster":"devnet","ts":"2026-04-12T20:20:32.143Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T20:20:32.945Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T20:50:33.244Z"}
+{"event":"balance","sol":21.458930939,"ts":"2026-04-12T20:50:34.292Z"}
+{"event":"tx_sent","sig":"3emsxzNivy7BYfgTPh1Toa4ySPfdBg3iaTqCvEhEKbYDBua9uqJ8uxwrR3yYViNtC5wfJ4MQMMjV9gXGXmh98s7B","cluster":"devnet","ts":"2026-04-12T20:50:37.969Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T20:50:38.305Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T21:06:26.341Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (35, 1)","ts":"2026-04-12T21:06:26.984Z"}
+{"event":"kyc_queued","sig":"3Kv5s2bkWB7QbiXV4dtkrj5mDtmVY7ULWZn3SMJmeTyoef6xDZymNdNUguqpq2QrqMucnQYc9SgSxJUw6Ufetb5A","explorer":"https://explorer.solana.com/tx/3Kv5s2bkWB7QbiXV4dtkrj5mDtmVY7ULWZn3SMJmeTyoef6xDZymNdNUguqpq2QrqMucnQYc9SgSxJUw6Ufetb5A?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T21:06:28.296Z"}
+{"event":"kyc_success","queueSig":"3Kv5s2bkWB7QbiXV4dtkrj5mDtmVY7ULWZn3SMJmeTyoef6xDZymNdNUguqpq2QrqMucnQYc9SgSxJUw6Ufetb5A","finalizeSig":"2FoZLRyZnTTFZYciwy1yZoD3JqFAC2GqSezA5T7gVWDHBNuQo156GWE7j26rnaXeTWDJPEjAjgPhcrBpvrqmVshC","clusterOffset":456,"ts":"2026-04-12T21:06:51.332Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T21:20:38.744Z"}
+{"event":"balance","sol":21.454485392,"ts":"2026-04-12T21:20:39.397Z"}
+{"event":"tx_sent","sig":"3zvU3B6B7ojDgMtjk5w6FbMJEzkGpuzD3UJqL5ozYRNLmuoA5xcsut53PwuR63qBN41qdGeudghuEhVu7mKPcV9v","cluster":"devnet","ts":"2026-04-12T21:20:40.545Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T21:20:40.922Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T21:50:41.158Z"}
+{"event":"balance","sol":21.441193604,"ts":"2026-04-12T21:50:41.804Z"}
+{"event":"tx_sent","sig":"3bT4DcWcQuQV7nrJneQSErnk6d7qbb56wtMheb2BoDnrmBUZyaBqpnd44tecBwkjTUta1CQcJxFf1RJwoQebBNj5","cluster":"devnet","ts":"2026-04-12T21:50:42.882Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T21:50:43.247Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T22:07:59.280Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (40, 0)","ts":"2026-04-12T22:07:59.947Z"}
+{"event":"kyc_queued","sig":"5Pp5doz8qKnLeCQBovZZJa4aGxVmHVZBqH1Xy9K6p3rqbMmrEXeFDZnHtjGK8nx3PzxDHE6A2XWDtAN9mbjvFTK9","explorer":"https://explorer.solana.com/tx/5Pp5doz8qKnLeCQBovZZJa4aGxVmHVZBqH1Xy9K6p3rqbMmrEXeFDZnHtjGK8nx3PzxDHE6A2XWDtAN9mbjvFTK9?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T22:08:01.271Z"}
+{"event":"kyc_success","queueSig":"5Pp5doz8qKnLeCQBovZZJa4aGxVmHVZBqH1Xy9K6p3rqbMmrEXeFDZnHtjGK8nx3PzxDHE6A2XWDtAN9mbjvFTK9","finalizeSig":"4D7oRT5xQtuhLvp9KMqbhPWJhfeC5ySNZofHVfbw5ekHy1buKaPV5sbpfkJs6nvGkZBwBWJAWVjqsTgp8coCkGss","clusterOffset":456,"ts":"2026-04-12T22:08:23.324Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T22:20:43.654Z"}
+{"event":"balance","sol":21.436767459,"ts":"2026-04-12T22:20:44.176Z"}
+{"event":"tx_sent","sig":"MmaNxRgyU1HJcHmd5iuKKGw5uN7ncnQXbekGx9G2rcnu8tzEcRARZXcdGAsHS7BA3cRVdRCK3qyL3wGiX926VdR","cluster":"devnet","ts":"2026-04-12T22:20:47.301Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T22:20:47.622Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T22:50:47.928Z"}
+{"event":"balance","sol":21.42350329,"ts":"2026-04-12T22:50:48.530Z"}
+{"event":"tx_sent","sig":"5mhf9JrJcyes1KFvytsXdw5TuS9DHJU3ZCox9o67qyL7kVqoKGH9QvG9H2tEyjvPD63nthGm8xdz8B5dma7wubpR","cluster":"devnet","ts":"2026-04-12T22:50:51.928Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T22:50:52.324Z"}
+{"event":"demo_start","program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","wallet":"4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u","description":"Encrypted KYC check via MXE without exposing PII","ts":"2026-04-12T23:09:32.013Z"}
+{"event":"identity_prepared","age":"encrypted","jurisdiction":"encrypted","note":"Local sample values prepared for compliance check (32, 0)","ts":"2026-04-12T23:09:32.621Z"}
+{"event":"kyc_queued","sig":"31kD31SSy18CBBF1jv7iTZGa1QcnoKc3NXKJmvPPBab3rWvqPxvoYanxcMfpKyUtHkHLYctDJZdnb1vQwwnL6BvD","explorer":"https://explorer.solana.com/tx/31kD31SSy18CBBF1jv7iTZGa1QcnoKc3NXKJmvPPBab3rWvqPxvoYanxcMfpKyUtHkHLYctDJZdnb1vQwwnL6BvD?cluster=devnet","note":"KYC compliance check queued in MXE cluster 456","ts":"2026-04-12T23:09:35.777Z"}
+{"event":"kyc_success","queueSig":"31kD31SSy18CBBF1jv7iTZGa1QcnoKc3NXKJmvPPBab3rWvqPxvoYanxcMfpKyUtHkHLYctDJZdnb1vQwwnL6BvD","finalizeSig":"2sbLVJGPoTjKdXRLNPnB4PTm9UaAg71FCVAYffpoWorcr2ufv4RqXS1LkTnAB9cJB3Xo42aKRAunVH6DRsNUutG9","clusterOffset":456,"ts":"2026-04-12T23:09:54.961Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T23:20:52.619Z"}
+{"event":"balance","sol":21.419056303,"ts":"2026-04-12T23:20:53.239Z"}
+{"event":"tx_sent","sig":"3AWCHxqsVZQGaikk2oGy5JysGTriXHRnLxekuGWJ8ZVqSo2Q86rqijYNKQaWsHZJzn2KrWvZjq9KaxyitebQBEPs","cluster":"devnet","ts":"2026-04-12T23:20:57.014Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T23:20:57.360Z"}
+{"event":"start","wallet":"2GCegoSmFYuGULMRby7Kr8brywbaNpWrQEcXHxWp3j2g","ts":"2026-04-12T23:50:57.564Z"}
+{"event":"balance","sol":21.405764217,"ts":"2026-04-12T23:50:58.091Z"}
+{"event":"tx_sent","sig":"3LxQcfA1HtqkaS6KAP65tyzhEvoGrGwEe6Nk5zAkzDHsXgm5AovboBtKaFc5FTiSqW4sniGbnf4592A2ZVmKW7Jt","cluster":"devnet","ts":"2026-04-12T23:51:01.748Z"}
+{"event":"arcium_ping","active":true,"program":"Eyn3GkHCZkPFTr3yhbUwxgpmfwSBf6mfMvj76TeUSG2h","ts":"2026-04-12T23:51:02.081Z"}
