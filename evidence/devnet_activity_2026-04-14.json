@@ -1,0 +1,25 @@
+{
+  "date": "2026-04-14",
+  "wallet": "4Y8R73V9QpmL2oUtS4LrwdZk3LrPRCLp7KGg2npPkB1u",
+  "cluster": "devnet",
+  "network": "solana",
+  "arcium_cluster_offset": 456,
+  "onchain_activity": {
+    "cross_transfers": 0,
+    "memo_txns": 0,
+    "wsol_cycles": 0,
+    "total_txns": 0
+  },
+  "mxe_activity": {
+    "computation_attempts": 0,
+    "computation_success": 0,
+    "programs_pinged": 6
+  },
+  "programs": {
+    "hello_world": "3TysCyYXyWpqNXDnQiwA4C2KiMSxGmBbTJADtGwFVeLr",
+    "private_voting": "S43YKqU6x229PdY5oUssPoD2UgH4EDUvugYos6WxvDY",
+    "encrypted_voting": "FoCgMmXj37JaMcbYrAnBDCWaaQE6FYzEBzMuAkXBZ7XF",
+    "encrypted_identity": "3zYA4ykzGofqeH6m6aET46AQNgBVtEa2XotAVX6TXgBV",
+    "encrypted_defi": "AmzMmGcKUqMWf57WPXhHBkE9QzrbXCc1emFK6hsVJTj7"
+  }
+}
